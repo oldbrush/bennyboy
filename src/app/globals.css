@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-charcoal: rgb(22, 22, 22);
+  --color-charcoal-light: rgb(35, 35, 35);
+  --color-teal: rgb(45, 92, 92);
+  --color-teal-light: rgb(55, 112, 112);
+  --color-cream: rgb(245, 242, 235);
+  --color-cream-dark: rgb(200, 195, 185);
+  --font-serif: var(--font-lusitana);
+  --font-sans: var(--font-lato);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(22, 22, 22);
+  color: rgb(245, 242, 235);
+  font-family: var(--font-lato), sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}

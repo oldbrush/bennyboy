@@ -1,0 +1,8 @@
+# CLAUDE.md
+
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+
+This is a new, empty project. Update this file as the codebase takes shape with:
+- Build, lint, and test commands
+- Architecture overview
+- Key conventions and patterns
