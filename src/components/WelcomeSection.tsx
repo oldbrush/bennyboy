@@ -5,7 +5,7 @@ export default function WelcomeSection() {
     <section className="py-36 md:py-44 px-8 md:px-16 bg-warm-white">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-24 items-center">
         <div>
-          <p className="text-[11px] tracking-[0.1em] uppercase text-terra mb-4">
+          <p className="text-[11px] tracking-[0.1em] uppercase text-terra mb-3">
             The American Riviera
           </p>
           <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-charcoal leading-[1.15] tracking-tight">

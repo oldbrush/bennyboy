@@ -22,10 +22,10 @@ export default function NewsletterSection() {
   return (
     <section className="py-36 md:py-44 px-8 md:px-16 bg-terra">
       <div className="max-w-2xl mx-auto text-center">
-        <p className="text-[11px] tracking-[0.1em] uppercase text-white/60 mb-4">
+        <p className="text-[11px] tracking-[0.1em] uppercase text-white/60 mb-3">
           Stay Connected
         </p>
-        <h2 className="font-serif text-3xl md:text-4xl font-semibold text-white mb-4">
+        <h2 className="font-serif text-3xl md:text-4xl font-semibold text-white mb-5">
           Exclusive Market Updates
         </h2>
         <p className="text-white/70 text-base md:text-lg mb-10">

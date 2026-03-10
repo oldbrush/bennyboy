@@ -19,7 +19,7 @@ export default function HomePage() {
   return (
     <>
       <HeroSection
-        image="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1600&q=80"
+        image="https://images.unsplash.com/photo-1763467941420-a971deda1779?w=1600&q=80"
         title="Luxury Living on the American Riviera"
         subtitle="Discover extraordinary properties in Santa Barbara, Montecito, and Carpinteria"
         ctaText="View Properties"
@@ -28,7 +28,7 @@ export default function HomePage() {
       <WelcomeSection />
       <ServicesSection />
       <section className="py-36 md:py-44 px-8 md:px-16 bg-warm-white">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           <SectionHeading
             title="Featured Properties"
             subtitle="Hand-selected homes representing the finest in coastal living"

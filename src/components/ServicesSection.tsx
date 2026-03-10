@@ -41,7 +41,7 @@ export default function ServicesSection() {
           title="How We Can Help"
           subtitle="Comprehensive real estate expertise tailored to your goals"
         />
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {services.map((service) => (
             <div
               key={service.title}

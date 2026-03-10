@@ -14,7 +14,7 @@ export default function SectionHeading({
   dark = false,
 }: SectionHeadingProps) {
   return (
-    <div className={`mb-14 ${center ? "text-center" : ""}`}>
+    <div className={`mb-16 md:mb-20 ${center ? "text-center" : ""}`}>
       <h2
         className={`font-serif text-3xl md:text-4xl font-semibold ${dark ? "text-white" : "text-charcoal"}`}
       >
@@ -22,12 +22,12 @@ export default function SectionHeading({
       </h2>
       {accent ? (
         <div
-          className={`mt-5 h-px w-12 bg-terra ${center ? "mx-auto" : ""}`}
+          className={`mt-3 h-px w-12 bg-terra ${center ? "mx-auto" : ""}`}
         />
       ) : null}
       {subtitle ? (
         <p
-          className={`mt-4 text-base md:text-lg ${dark ? "text-cream/50" : "text-charcoal/50"}`}
+          className={`mt-5 text-base md:text-lg ${dark ? "text-cream/50" : "text-charcoal/50"}`}
         >
           {subtitle}
         </p>
