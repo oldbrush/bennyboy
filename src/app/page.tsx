@@ -27,7 +27,7 @@ export default function HomePage() {
       />
       <WelcomeSection />
       <ServicesSection />
-      <section className="py-28 md:py-36 px-6 bg-charcoal">
+      <section className="py-28 md:py-36 px-8 md:px-16 bg-charcoal">
         <div className="max-w-7xl mx-auto">
           <SectionHeading
             title="Featured Properties"

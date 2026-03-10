@@ -24,7 +24,7 @@ export default function NeighborhoodHero({
         style={{ backgroundColor: "rgb(28, 24, 20)" }}
       />
       <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/30 to-transparent" />
-      <div className="relative z-10 px-6 pb-16 w-full max-w-7xl mx-auto">
+      <div className="relative z-10 px-8 md:px-16 pb-16 w-full max-w-7xl mx-auto">
         <p className="text-[11px] tracking-[0.3em] uppercase text-adobe mb-3">
           Explore
         </p>

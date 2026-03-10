@@ -37,7 +37,7 @@ export default function HeroSection({
       {overlay ? (
         <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/40 to-transparent" />
       ) : null}
-      <div className="relative z-10 px-6 pb-20 md:pb-28 w-full max-w-7xl mx-auto">
+      <div className="relative z-10 px-8 md:px-16 pb-20 md:pb-28 w-full max-w-7xl mx-auto">
         <p className="text-[11px] tracking-[0.3em] uppercase text-adobe mb-4">
           Santa Barbara &middot; Montecito &middot; Carpinteria
         </p>

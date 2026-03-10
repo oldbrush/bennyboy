@@ -23,7 +23,7 @@ export default function MontecitoPage() {
         tagline={neighborhood.tagline}
         image={neighborhood.heroImage}
       />
-      <section className="py-24 px-6 bg-charcoal">
+      <section className="py-24 px-8 md:px-16 bg-charcoal">
         <div className="max-w-4xl mx-auto text-center mb-16">
           <p className="text-cream/60 text-lg leading-relaxed">
             {neighborhood.description}

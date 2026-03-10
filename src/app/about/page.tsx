@@ -19,7 +19,7 @@ export default function AboutPage() {
       {/* Hero Spacer */}
       <div className="h-24 md:h-28 bg-charcoal" />
 
-      <section className="py-24 md:py-32 px-6 bg-charcoal">
+      <section className="py-24 md:py-32 px-8 md:px-16 bg-charcoal">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-20 items-center">
             {/* Headshot */}

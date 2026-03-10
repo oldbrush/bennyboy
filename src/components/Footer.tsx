@@ -14,7 +14,7 @@ const quickLinks = [
 export default function Footer() {
   return (
     <footer className="bg-iron border-t border-charcoal-border">
-      <div className="max-w-7xl mx-auto px-6 py-20">
+      <div className="max-w-7xl mx-auto px-8 md:px-16 py-20">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-16">
           {/* Agent Info */}
           <div>

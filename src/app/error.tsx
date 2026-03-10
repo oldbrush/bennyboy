@@ -9,7 +9,7 @@ export default function Error({
   return (
     <>
       <div className="h-24 md:h-28 bg-charcoal" />
-      <section className="min-h-[60vh] flex items-center justify-center px-6 bg-charcoal">
+      <section className="min-h-[60vh] flex items-center justify-center px-8 md:px-16 bg-charcoal">
         <div className="text-center max-w-md">
           <p className="text-[11px] tracking-[0.3em] uppercase text-terra mb-4">
             Error
