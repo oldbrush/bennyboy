@@ -26,11 +26,12 @@ export default function AboutPage() {
             {/* Headshot */}
             <div className="relative aspect-[3/4] rounded-lg overflow-hidden">
               <Image
-                src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=600&q=80"
-                alt="Benjamin Harris"
+                src="/images/ben-harris.png"
+                alt="Benjamin Harris, Santa Barbara luxury realtor"
                 fill
                 className="object-cover"
                 sizes="(max-width: 768px) 100vw, 50vw"
+                priority
               />
             </div>
 
