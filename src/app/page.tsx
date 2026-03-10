@@ -19,7 +19,7 @@ export default function HomePage() {
   return (
     <>
       <HeroSection
-        image="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=1600&q=80"
+        image="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1600&q=80"
         title="Luxury Living on the American Riviera"
         subtitle="Discover extraordinary properties in Santa Barbara, Montecito, and Carpinteria"
         ctaText="View Properties"

@@ -15,7 +15,6 @@ export const properties: Property[] = [
     image: "https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800&q=80",
     status: "active",
     neighborhood: "santa-barbara",
-    featured: true,
   },
   {
     id: "2",
@@ -78,6 +77,7 @@ export const properties: Property[] = [
     image: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=80",
     status: "active",
     neighborhood: "montecito",
+    featured: true,
   },
   {
     id: "6",
