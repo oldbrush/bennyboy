@@ -91,7 +91,7 @@ export default function HeroCarousel({
         ) : null}
 
         {/* Dot indicators */}
-        <div className="flex gap-2.5 mt-14" role="tablist" aria-label="Hero images">
+        <div className="flex gap-2.5 mt-14 mb-8 md:mb-12" role="tablist" aria-label="Hero images">
           {images.map((_, i) => (
             <button
               key={i}
