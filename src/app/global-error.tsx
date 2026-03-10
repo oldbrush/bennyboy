@@ -9,7 +9,7 @@ export default function GlobalError({
   return (
     <html>
       <body className="bg-[rgb(28,24,20)] text-[rgb(250,245,235)]">
-        <section className="min-h-screen flex items-center justify-center px-6">
+        <section className="min-h-dvh flex items-center justify-center px-6">
           <div className="text-center">
             <h1 className="text-4xl font-bold text-white mb-4">
               Something went wrong

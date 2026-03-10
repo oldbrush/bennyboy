@@ -5,19 +5,24 @@ import { useState } from "react";
 export default function NewsletterSection() {
   const [email, setEmail] = useState("");
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
 
   function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
     if (email) {
-      setSubmitted(true);
-      setEmail("");
+      setSubmitting(true);
+      setTimeout(() => {
+        setSubmitted(true);
+        setSubmitting(false);
+        setEmail("");
+      }, 600);
     }
   }
 
   return (
     <section className="py-28 md:py-36 px-8 md:px-16 bg-terra">
       <div className="max-w-2xl mx-auto text-center">
-        <p className="text-[11px] tracking-[0.3em] uppercase text-white/60 mb-4">
+        <p className="text-[11px] tracking-[0.1em] uppercase text-white/60 mb-4">
           Stay Connected
         </p>
         <h2 className="font-serif text-3xl md:text-4xl font-semibold text-white mb-4">
@@ -47,13 +52,14 @@ export default function NewsletterSection() {
               onChange={(e) => setEmail(e.target.value)}
               placeholder="Enter your email&hellip;"
               required
-              className="flex-1 px-5 py-4 rounded-lg bg-white/15 border border-white/25 text-white placeholder:text-white/40 focus:outline-none focus:border-white/60 transition-colors duration-200"
+              className="flex-1 px-5 py-4 rounded-lg bg-white/15 border border-white/25 text-white placeholder:text-white/40 focus:outline-none focus:border-white/60 transition-colors duration-150"
             />
             <button
               type="submit"
-              className="px-8 py-4 rounded-lg bg-charcoal hover:bg-charcoal-light text-white text-sm tracking-[0.08em] uppercase cursor-pointer transition-colors duration-200"
+              disabled={submitting}
+              className="px-8 py-4 rounded-lg bg-charcoal hover:bg-charcoal-light text-white text-sm tracking-[0.08em] uppercase cursor-pointer transition-colors duration-150 disabled:opacity-60 disabled:cursor-not-allowed"
             >
-              Subscribe
+              {submitting ? "Subscribing…" : "Subscribe"}
             </button>
           </form>
         )}

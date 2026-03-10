@@ -21,7 +21,7 @@ export default function Footer() {
             <h3 className="font-serif text-2xl font-semibold text-white mb-2">
               {siteConfig.name}
             </h3>
-            <p className="text-[11px] tracking-[0.25em] uppercase text-adobe mb-6">
+            <p className="text-[11px] tracking-[0.08em] uppercase text-adobe mb-6">
               {siteConfig.title}
             </p>
             <p className="text-cream/40 text-sm leading-relaxed">
@@ -35,7 +35,7 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-[11px] font-bold tracking-[0.2em] uppercase text-cream/30 mb-6">
+            <h4 className="text-[11px] font-bold tracking-[0.08em] uppercase text-cream/30 mb-6">
               Quick Links
             </h4>
             <nav className="flex flex-col gap-3">
@@ -43,7 +43,7 @@ export default function Footer() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="text-sm text-cream/50 hover:text-terra-light transition-colors duration-200"
+                  className="text-sm text-cream/50 hover:text-terra-light transition-colors duration-150"
                 >
                   {link.label}
                 </Link>
@@ -53,19 +53,19 @@ export default function Footer() {
 
           {/* Contact Info */}
           <div>
-            <h4 className="text-[11px] font-bold tracking-[0.2em] uppercase text-cream/30 mb-6">
+            <h4 className="text-[11px] font-bold tracking-[0.08em] uppercase text-cream/30 mb-6">
               Get in Touch
             </h4>
             <div className="flex flex-col gap-4 text-sm text-cream/50">
               <a
                 href={`tel:${siteConfig.phone}`}
-                className="hover:text-terra-light transition-colors duration-200"
+                className="hover:text-terra-light transition-colors duration-150"
               >
                 {siteConfig.phone}
               </a>
               <a
                 href={`mailto:${siteConfig.email}`}
-                className="hover:text-terra-light transition-colors duration-200"
+                className="hover:text-terra-light transition-colors duration-150"
               >
                 {siteConfig.email}
               </a>

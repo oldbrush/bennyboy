@@ -27,10 +27,10 @@ export default function Navbar() {
         <div className="bg-warm-white/80 backdrop-blur-lg md:rounded-xl border-b border-sandy-dark/20 md:border md:border-sandy-dark/15 md:shadow-lg">
           <div className="px-6 md:px-8 flex items-center justify-between h-20">
             <Link href="/" className="flex flex-col group">
-              <span className="font-serif text-xl font-bold tracking-wide text-charcoal group-hover:text-terra transition-colors duration-200">
+              <span className="font-serif text-xl font-bold tracking-wide text-charcoal group-hover:text-terra transition-colors duration-150">
                 {AGENT_NAME}
               </span>
-              <span className="text-[10px] tracking-[0.25em] uppercase text-charcoal/40">
+              <span className="text-[10px] tracking-[0.08em] uppercase text-charcoal/40">
                 {AGENT_TITLE}
               </span>
             </Link>
@@ -39,25 +39,25 @@ export default function Navbar() {
             <div className="hidden md:flex items-center gap-10">
               <Link
                 href="/"
-                className="text-[13px] tracking-[0.08em] uppercase text-charcoal/60 hover:text-terra transition-colors duration-200"
+                className="text-[13px] tracking-[0.08em] uppercase text-charcoal/60 hover:text-terra transition-colors duration-150"
               >
                 Home
               </Link>
               <Link
                 href="/about"
-                className="text-[13px] tracking-[0.08em] uppercase text-charcoal/60 hover:text-terra transition-colors duration-200"
+                className="text-[13px] tracking-[0.08em] uppercase text-charcoal/60 hover:text-terra transition-colors duration-150"
               >
                 About
               </Link>
               <Link
                 href="/properties"
-                className="text-[13px] tracking-[0.08em] uppercase text-charcoal/60 hover:text-terra transition-colors duration-200"
+                className="text-[13px] tracking-[0.08em] uppercase text-charcoal/60 hover:text-terra transition-colors duration-150"
               >
                 Properties
               </Link>
               <Link
                 href="/sold"
-                className="text-[13px] tracking-[0.08em] uppercase text-charcoal/60 hover:text-terra transition-colors duration-200"
+                className="text-[13px] tracking-[0.08em] uppercase text-charcoal/60 hover:text-terra transition-colors duration-150"
               >
                 Sold
               </Link>
@@ -65,7 +65,7 @@ export default function Navbar() {
               {/* Explore Dropdown */}
               <div className="relative group">
                 <button
-                  className="text-[13px] tracking-[0.08em] uppercase text-charcoal/60 hover:text-terra transition-colors duration-200 flex items-center gap-1.5 cursor-pointer"
+                  className="text-[13px] tracking-[0.08em] uppercase text-charcoal/60 hover:text-terra transition-colors duration-150 flex items-center gap-1.5 cursor-pointer"
                   aria-haspopup="true"
                 >
                   Explore
@@ -85,7 +85,7 @@ export default function Navbar() {
                   </svg>
                 </button>
                 <div
-                  className="absolute top-full left-1/2 -translate-x-1/2 pt-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200"
+                  className="absolute top-full left-1/2 -translate-x-1/2 pt-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-[opacity,visibility] duration-150"
                   role="menu"
                 >
                   <div className="bg-warm-white/95 backdrop-blur-lg border border-sandy-dark/20 rounded-lg py-2 min-w-[200px] shadow-xl">
@@ -105,7 +105,7 @@ export default function Navbar() {
 
               <Link
                 href="/contact"
-                className="text-[13px] tracking-[0.08em] uppercase bg-terra hover:bg-terra-light text-white px-7 py-3 rounded-lg transition-colors duration-200"
+                className="text-[13px] tracking-[0.08em] uppercase bg-terra hover:bg-terra-light text-white px-7 py-3 rounded-lg transition-colors duration-150"
               >
                 Contact
               </Link>

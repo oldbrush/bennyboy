@@ -10,6 +10,7 @@ export default function ContactForm() {
     message: "",
   });
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
 
   function handleChange(
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -20,7 +21,11 @@ export default function ContactForm() {
 
   function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
-    setSubmitted(true);
+    setSubmitting(true);
+    setTimeout(() => {
+      setSubmitted(true);
+      setSubmitting(false);
+    }, 600);
   }
 
   if (submitted) {
@@ -39,7 +44,7 @@ export default function ContactForm() {
   return (
     <form onSubmit={handleSubmit} className="space-y-6">
       <div>
-        <label htmlFor="contact-name" className="block text-[11px] tracking-[0.15em] uppercase text-charcoal/40 mb-2">
+        <label htmlFor="contact-name" className="block text-[11px] tracking-[0.06em] uppercase text-charcoal/40 mb-2">
           Full Name
         </label>
         <input
@@ -51,11 +56,11 @@ export default function ContactForm() {
           onChange={handleChange}
           placeholder="Your full name&hellip;"
           required
-          className="w-full bg-white border border-sandy-dark/50 rounded-lg px-4 py-3.5 text-charcoal placeholder:text-charcoal/30 focus:outline-none focus:border-terra/50 transition-colors duration-200"
+          className="w-full bg-white border border-sandy-dark/50 rounded-lg px-4 py-3.5 text-charcoal placeholder:text-charcoal/30 focus:outline-none focus:border-terra/50 transition-colors duration-150"
         />
       </div>
       <div>
-        <label htmlFor="contact-email" className="block text-[11px] tracking-[0.15em] uppercase text-charcoal/40 mb-2">
+        <label htmlFor="contact-email" className="block text-[11px] tracking-[0.06em] uppercase text-charcoal/40 mb-2">
           Email Address
         </label>
         <input
@@ -68,11 +73,11 @@ export default function ContactForm() {
           placeholder="you@example.com"
           required
           spellCheck={false}
-          className="w-full bg-white border border-sandy-dark/50 rounded-lg px-4 py-3.5 text-charcoal placeholder:text-charcoal/30 focus:outline-none focus:border-terra/50 transition-colors duration-200"
+          className="w-full bg-white border border-sandy-dark/50 rounded-lg px-4 py-3.5 text-charcoal placeholder:text-charcoal/30 focus:outline-none focus:border-terra/50 transition-colors duration-150"
         />
       </div>
       <div>
-        <label htmlFor="contact-phone" className="block text-[11px] tracking-[0.15em] uppercase text-charcoal/40 mb-2">
+        <label htmlFor="contact-phone" className="block text-[11px] tracking-[0.06em] uppercase text-charcoal/40 mb-2">
           Phone Number
         </label>
         <input
@@ -84,11 +89,11 @@ export default function ContactForm() {
           value={formData.phone}
           onChange={handleChange}
           placeholder="(805) 555-0100"
-          className="w-full bg-white border border-sandy-dark/50 rounded-lg px-4 py-3.5 text-charcoal placeholder:text-charcoal/30 focus:outline-none focus:border-terra/50 transition-colors duration-200"
+          className="w-full bg-white border border-sandy-dark/50 rounded-lg px-4 py-3.5 text-charcoal placeholder:text-charcoal/30 focus:outline-none focus:border-terra/50 transition-colors duration-150"
         />
       </div>
       <div>
-        <label htmlFor="contact-message" className="block text-[11px] tracking-[0.15em] uppercase text-charcoal/40 mb-2">
+        <label htmlFor="contact-message" className="block text-[11px] tracking-[0.06em] uppercase text-charcoal/40 mb-2">
           Message
         </label>
         <textarea
@@ -99,14 +104,15 @@ export default function ContactForm() {
           placeholder="Tell us about your real estate goals&hellip;"
           required
           rows={5}
-          className="w-full bg-white border border-sandy-dark/50 rounded-lg px-4 py-3.5 text-charcoal placeholder:text-charcoal/30 focus:outline-none focus:border-terra/50 transition-colors duration-200 resize-none"
+          className="w-full bg-white border border-sandy-dark/50 rounded-lg px-4 py-3.5 text-charcoal placeholder:text-charcoal/30 focus:outline-none focus:border-terra/50 transition-colors duration-150 resize-none"
         />
       </div>
       <button
         type="submit"
-        className="w-full bg-terra hover:bg-terra-light text-white py-4 rounded-lg text-sm tracking-[0.08em] uppercase cursor-pointer transition-colors duration-200"
+        disabled={submitting}
+        className="w-full bg-terra hover:bg-terra-light text-white py-4 rounded-lg text-sm tracking-[0.08em] uppercase cursor-pointer transition-colors duration-150 disabled:opacity-60 disabled:cursor-not-allowed"
       >
-        Send Message
+        {submitting ? "Sending…" : "Send Message"}
       </button>
     </form>
   );

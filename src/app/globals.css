@@ -90,6 +90,16 @@ a, button, [role="button"] {
   touch-action: manipulation;
 }
 
+/* Motion tokens — refero-design spec */
+:root {
+  --ease-out: cubic-bezier(0, 0, 0.2, 1);
+  --ease-in: cubic-bezier(0.4, 0, 1, 1);
+  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --duration-instant: 120ms;
+  --duration-state: 200ms;
+  --duration-page: 300ms;
+}
+
 /* content-visibility: skip rendering off-screen property cards */
 .property-card {
   content-visibility: auto;

@@ -25,10 +25,10 @@ export default function NeighborhoodHero({
       />
       <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/30 to-transparent" />
       <div className="relative z-10 px-8 md:px-16 pb-16 w-full max-w-7xl mx-auto">
-        <p className="text-[11px] tracking-[0.3em] uppercase text-adobe mb-3">
+        <p className="text-[11px] tracking-[0.1em] uppercase text-adobe mb-3">
           Explore
         </p>
-        <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-white">
+        <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-white tracking-tight">
           {name}
         </h1>
         <p className="mt-3 text-lg text-cream/60">{tagline}</p>

@@ -22,7 +22,7 @@ export default function HeroSection({
 }: HeroSectionProps) {
   return (
     <section
-      className={`relative ${fullHeight ? "h-screen" : "h-[60vh]"} flex items-end`}
+      className={`relative ${fullHeight ? "h-dvh" : "h-[60vh]"} flex items-end`}
     >
       <Image
         src={image}
@@ -38,10 +38,10 @@ export default function HeroSection({
         <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/40 to-transparent" />
       ) : null}
       <div className="relative z-10 px-8 md:px-16 pb-20 md:pb-28 w-full max-w-7xl mx-auto">
-        <p className="text-[11px] tracking-[0.3em] uppercase text-adobe mb-4">
+        <p className="text-[11px] tracking-[0.1em] uppercase text-adobe mb-4">
           Santa Barbara &middot; Montecito &middot; Carpinteria
         </p>
-        <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-[1.1] max-w-4xl">
+        <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-[1.1] tracking-tight max-w-4xl">
           {title}
         </h1>
         {subtitle ? (
@@ -52,7 +52,7 @@ export default function HeroSection({
         {ctaText ? (
           <Link
             href={ctaHref}
-            className="mt-8 inline-flex items-center gap-2 bg-terra hover:bg-terra-light text-white px-8 py-4 rounded-lg text-sm tracking-[0.08em] uppercase transition-colors duration-200"
+            className="mt-8 inline-flex items-center gap-2 bg-terra hover:bg-terra-light text-white px-8 py-4 rounded-lg text-sm tracking-[0.08em] uppercase transition-colors duration-150"
           >
             {ctaText}
             <svg

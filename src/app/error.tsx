@@ -11,7 +11,7 @@ export default function Error({
       <div className="h-24 md:h-28 bg-warm-white" />
       <section className="min-h-[60vh] flex items-center justify-center px-8 md:px-16 bg-warm-white">
         <div className="text-center max-w-md">
-          <p className="text-[11px] tracking-[0.3em] uppercase text-terra mb-4">
+          <p className="text-[11px] tracking-[0.1em] uppercase text-terra mb-4">
             Error
           </p>
           <h1 className="font-serif text-3xl md:text-4xl font-semibold text-charcoal mb-4">
@@ -22,7 +22,7 @@ export default function Error({
           </p>
           <button
             onClick={reset}
-            className="inline-block bg-terra hover:bg-terra-light text-white px-8 py-4 rounded-lg text-sm tracking-[0.08em] uppercase cursor-pointer transition-colors duration-200"
+            className="inline-block bg-terra hover:bg-terra-light text-white px-8 py-4 rounded-lg text-sm tracking-[0.08em] uppercase cursor-pointer transition-colors duration-150"
           >
             Try Again
           </button>

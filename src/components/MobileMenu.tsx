@@ -27,7 +27,7 @@ export default function MobileMenu({
       <div className="absolute right-0 top-0 bottom-0 w-80 bg-warm-white border-l border-sandy-dark/20 p-8 flex flex-col overflow-y-auto overscroll-contain shadow-2xl">
         <button
           onClick={onClose}
-          className="self-end text-charcoal/40 hover:text-charcoal mb-10 p-1 cursor-pointer transition-colors duration-200"
+          className="self-end text-charcoal/40 hover:text-charcoal mb-10 p-1 cursor-pointer transition-colors duration-150"
           aria-label="Close menu"
         >
           <svg
@@ -50,35 +50,35 @@ export default function MobileMenu({
           <Link
             href="/"
             onClick={onClose}
-            className="text-lg text-charcoal/70 hover:text-terra py-3 transition-colors duration-200"
+            className="text-lg text-charcoal/70 hover:text-terra py-3 transition-colors duration-150"
           >
             Home
           </Link>
           <Link
             href="/about"
             onClick={onClose}
-            className="text-lg text-charcoal/70 hover:text-terra py-3 transition-colors duration-200"
+            className="text-lg text-charcoal/70 hover:text-terra py-3 transition-colors duration-150"
           >
             About
           </Link>
           <Link
             href="/properties"
             onClick={onClose}
-            className="text-lg text-charcoal/70 hover:text-terra py-3 transition-colors duration-200"
+            className="text-lg text-charcoal/70 hover:text-terra py-3 transition-colors duration-150"
           >
             Properties
           </Link>
           <Link
             href="/sold"
             onClick={onClose}
-            className="text-lg text-charcoal/70 hover:text-terra py-3 transition-colors duration-200"
+            className="text-lg text-charcoal/70 hover:text-terra py-3 transition-colors duration-150"
           >
             Sold
           </Link>
 
           <button
             onClick={() => setExploreOpen((prev) => !prev)}
-            className="text-lg text-charcoal/70 hover:text-terra py-3 text-left flex items-center justify-between cursor-pointer transition-colors duration-200"
+            className="text-lg text-charcoal/70 hover:text-terra py-3 text-left flex items-center justify-between cursor-pointer transition-colors duration-150"
           >
             Explore
             <svg
@@ -103,7 +103,7 @@ export default function MobileMenu({
                   key={link.href}
                   href={link.href}
                   onClick={onClose}
-                  className="text-base text-charcoal/50 hover:text-terra py-2.5 transition-colors duration-200"
+                  className="text-base text-charcoal/50 hover:text-terra py-2.5 transition-colors duration-150"
                 >
                   {link.label}
                 </Link>
@@ -115,7 +115,7 @@ export default function MobileMenu({
             <Link
               href="/contact"
               onClick={onClose}
-              className="block text-center bg-terra hover:bg-terra-light text-white px-6 py-4 rounded-lg text-sm tracking-[0.08em] uppercase transition-colors duration-200"
+              className="block text-center bg-terra hover:bg-terra-light text-white px-6 py-4 rounded-lg text-sm tracking-[0.08em] uppercase transition-colors duration-150"
             >
               Contact
             </Link>

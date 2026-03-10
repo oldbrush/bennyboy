@@ -35,13 +35,13 @@ export default function AboutPage() {
 
             {/* Bio */}
             <div>
-              <p className="text-[11px] tracking-[0.3em] uppercase text-terra mb-4">
+              <p className="text-[11px] tracking-[0.1em] uppercase text-terra mb-4">
                 About
               </p>
-              <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl font-semibold text-charcoal mb-8 leading-[1.15]">
+              <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl font-semibold text-charcoal mb-8 leading-[1.15] tracking-tight">
                 Benjamin Harris
               </h1>
-              <div className="space-y-5 text-charcoal/55 leading-[1.8] text-[15px]">
+              <div className="space-y-5 text-charcoal/55 leading-[1.6] text-[15px] max-w-prose">
                 <p>
                   Born and raised on the California coast, Benjamin Harris has
                   spent over 15 years helping discerning buyers and sellers
@@ -80,7 +80,7 @@ export default function AboutPage() {
                 <div className="font-serif text-4xl md:text-5xl font-semibold text-terra mb-3 tabular-nums">
                   {stat.value}
                 </div>
-                <div className="text-[11px] tracking-[0.2em] text-charcoal/40 uppercase">
+                <div className="text-[11px] tracking-[0.08em] text-charcoal/40 uppercase">
                   {stat.label}
                 </div>
               </div>

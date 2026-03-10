@@ -23,35 +23,35 @@ export default function ContactPage() {
             {/* Contact Info */}
             <div className="space-y-10">
               <div>
-                <h3 className="text-[11px] font-bold tracking-[0.2em] uppercase text-charcoal/30 mb-3">
+                <h3 className="text-[11px] font-bold tracking-[0.08em] uppercase text-charcoal/30 mb-3">
                   Phone
                 </h3>
                 <a
                   href={`tel:${siteConfig.phone}`}
-                  className="text-lg text-charcoal/70 hover:text-terra transition-colors duration-200"
+                  className="text-lg text-charcoal/70 hover:text-terra transition-colors duration-150"
                 >
                   {siteConfig.phone}
                 </a>
               </div>
               <div>
-                <h3 className="text-[11px] font-bold tracking-[0.2em] uppercase text-charcoal/30 mb-3">
+                <h3 className="text-[11px] font-bold tracking-[0.08em] uppercase text-charcoal/30 mb-3">
                   Email
                 </h3>
                 <a
                   href={`mailto:${siteConfig.email}`}
-                  className="text-lg text-charcoal/70 hover:text-terra transition-colors duration-200"
+                  className="text-lg text-charcoal/70 hover:text-terra transition-colors duration-150"
                 >
                   {siteConfig.email}
                 </a>
               </div>
               <div>
-                <h3 className="text-[11px] font-bold tracking-[0.2em] uppercase text-charcoal/30 mb-3">
+                <h3 className="text-[11px] font-bold tracking-[0.08em] uppercase text-charcoal/30 mb-3">
                   Office
                 </h3>
                 <p className="text-lg text-charcoal/70">{siteConfig.address}</p>
               </div>
               <div>
-                <h3 className="text-[11px] font-bold tracking-[0.2em] uppercase text-charcoal/30 mb-3">
+                <h3 className="text-[11px] font-bold tracking-[0.08em] uppercase text-charcoal/30 mb-3">
                   Brokerage
                 </h3>
                 <p className="text-charcoal/70">
