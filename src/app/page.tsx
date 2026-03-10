@@ -1,11 +1,30 @@
 import type { Metadata } from "next";
-import HeroSection from "@/components/HeroSection";
+import HeroCarousel from "@/components/HeroCarousel";
 import WelcomeSection from "@/components/WelcomeSection";
 import ServicesSection from "@/components/ServicesSection";
 import SectionHeading from "@/components/SectionHeading";
 import PropertyGrid from "@/components/PropertyGrid";
 import NewsletterSection from "@/components/NewsletterSection";
 import { getFeaturedProperties } from "@/data/properties";
+
+const heroImages = [
+  {
+    src: "https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=1600&q=80",
+    alt: "Modern Montecito estate with infinity pool at dusk",
+  },
+  {
+    src: "https://images.unsplash.com/photo-1726933990851-0141ad5ac85c?w=1600&q=80",
+    alt: "Coastal estate on a cliff overlooking the Pacific Ocean",
+  },
+  {
+    src: "https://images.unsplash.com/photo-1701662454034-b98c550e54e9?w=1600&q=80",
+    alt: "Luxury home overlooking the ocean at sunset",
+  },
+  {
+    src: "https://plus.unsplash.com/premium_photo-1746327707391-d095ac370b9c?w=1600&q=80",
+    alt: "Sprawling luxury estate with pool at golden hour",
+  },
+];
 
 export const metadata: Metadata = {
   title: "Santa Barbara Luxury Living",
@@ -18,8 +37,8 @@ export default function HomePage() {
 
   return (
     <>
-      <HeroSection
-        image="https://images.unsplash.com/photo-1763467941420-a971deda1779?w=1600&q=80"
+      <HeroCarousel
+        images={heroImages}
         title="Luxury Living on the American Riviera"
         subtitle="Discover extraordinary properties in Santa Barbara, Montecito, and Carpinteria"
         ctaText="View Properties"
