@@ -6,7 +6,7 @@ import { getNeighborhood } from "@/data/neighborhoods";
 import { getPropertiesByNeighborhood } from "@/data/properties";
 
 export const metadata: Metadata = {
-  title: "Santa Barbara | Benjamin Harris Luxury Real Estate",
+  title: "Santa Barbara",
   description:
     "Explore luxury real estate in Santa Barbara, the American Riviera.",
 };
@@ -37,7 +37,7 @@ export default function SantaBarbaraPage() {
                 key={highlight}
                 className="flex items-start gap-3 p-4 rounded-lg border border-white/5"
               >
-                <span className="text-teal mt-0.5">&#10003;</span>
+                <span className="text-terra mt-0.5">&#10003;</span>
                 <span className="text-cream/70">{highlight}</span>
               </div>
             ))}

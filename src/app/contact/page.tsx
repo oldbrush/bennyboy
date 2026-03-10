@@ -4,7 +4,7 @@ import ContactForm from "@/components/ContactForm";
 import { siteConfig } from "@/data/siteConfig";
 
 export const metadata: Metadata = {
-  title: "Contact | Benjamin Harris Luxury Real Estate",
+  title: "Contact",
   description: "Get in touch with Benjamin Harris for luxury real estate inquiries.",
 };
 

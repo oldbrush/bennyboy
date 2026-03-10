@@ -3,7 +3,7 @@ import Image from "next/image";
 import SectionHeading from "@/components/SectionHeading";
 
 export const metadata: Metadata = {
-  title: "About | Benjamin Harris Luxury Real Estate",
+  title: "About",
   description:
     "Learn about Benjamin Harris, Santa Barbara's premier luxury real estate agent.",
 };
@@ -76,7 +76,7 @@ export default function AboutPage() {
                 key={stat.label}
                 className="text-center p-8 rounded-lg border border-white/5"
               >
-                <div className="font-serif text-4xl font-bold text-teal mb-2">
+                <div className="font-serif text-4xl font-bold text-terra mb-2">
                   {stat.value}
                 </div>
                 <div className="text-sm tracking-wide text-cream/50 uppercase">

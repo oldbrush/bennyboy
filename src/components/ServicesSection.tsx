@@ -45,9 +45,9 @@ export default function ServicesSection() {
           {services.map((service) => (
             <div
               key={service.title}
-              className="p-8 rounded-lg border border-white/5 hover:border-teal/30 transition-colors"
+              className="p-8 rounded-lg border border-white/5 hover:border-terra/30 transition-colors"
             >
-              <div className="text-teal mb-4">{service.icon}</div>
+              <div className="text-terra mb-4">{service.icon}</div>
               <h3 className="font-serif text-xl font-bold text-white mb-3">
                 {service.title}
               </h3>

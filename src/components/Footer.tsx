@@ -3,7 +3,7 @@ import { siteConfig } from "@/data/siteConfig";
 
 export default function Footer() {
   return (
-    <footer className="bg-charcoal border-t border-white/5">
+    <footer className="bg-charcoal border-t border-charcoal-border">
       <div className="max-w-7xl mx-auto px-6 py-16">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Agent Info */}
@@ -38,7 +38,7 @@ export default function Footer() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="text-sm text-cream/50 hover:text-white transition-colors"
+                  className="text-sm text-cream/50 hover:text-terra-light transition-colors"
                 >
                   {link.label}
                 </Link>
@@ -54,13 +54,13 @@ export default function Footer() {
             <div className="flex flex-col gap-3 text-sm text-cream/60">
               <a
                 href={`tel:${siteConfig.phone}`}
-                className="hover:text-white transition-colors"
+                className="hover:text-terra-light transition-colors"
               >
                 {siteConfig.phone}
               </a>
               <a
                 href={`mailto:${siteConfig.email}`}
-                className="hover:text-white transition-colors"
+                className="hover:text-terra-light transition-colors"
               >
                 {siteConfig.email}
               </a>
@@ -68,7 +68,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 pt-8 border-t border-white/5 text-center text-xs text-cream/30">
+        <div className="mt-12 pt-8 border-t border-charcoal-border text-center text-xs text-cream/30">
           &copy; {new Date().getFullYear()} {siteConfig.name}. All rights
           reserved.
         </div>

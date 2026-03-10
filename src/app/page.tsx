@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import HeroSection from "@/components/HeroSection";
 import WelcomeSection from "@/components/WelcomeSection";
 import ServicesSection from "@/components/ServicesSection";
@@ -5,6 +6,12 @@ import SectionHeading from "@/components/SectionHeading";
 import PropertyGrid from "@/components/PropertyGrid";
 import NewsletterSection from "@/components/NewsletterSection";
 import { getFeaturedProperties } from "@/data/properties";
+
+export const metadata: Metadata = {
+  title: "Santa Barbara Luxury Living",
+  description:
+    "Discover extraordinary luxury properties along the American Riviera. Browse exclusive homes in Santa Barbara, Montecito, and Carpinteria.",
+};
 
 export default function HomePage() {
   const featured = getFeaturedProperties();

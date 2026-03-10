@@ -1,9 +1,10 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
-import { siteConfig } from "@/data/siteConfig";
-import MobileMenu from "./MobileMenu";
+import { useState, useCallback } from "react";
+import dynamic from "next/dynamic";
+
+const MobileMenu = dynamic(() => import("./MobileMenu"), { ssr: false });
 
 const exploreLinks = [
   { href: "/explore/santa-barbara", label: "Santa Barbara" },
@@ -11,8 +12,13 @@ const exploreLinks = [
   { href: "/explore/carpinteria", label: "Carpinteria" },
 ];
 
+const AGENT_NAME = "Benjamin Harris";
+const AGENT_TITLE = "Luxury Real Estate";
+
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const handleOpen = useCallback(() => setMobileOpen(true), []);
+  const handleClose = useCallback(() => setMobileOpen(false), []);
 
   return (
     <>
@@ -20,10 +26,10 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto px-6 flex items-center justify-between h-20">
           <Link href="/" className="flex flex-col">
             <span className="font-serif text-xl font-bold tracking-wide text-white">
-              {siteConfig.name}
+              {AGENT_NAME}
             </span>
             <span className="text-[11px] tracking-[0.2em] uppercase text-cream-dark">
-              {siteConfig.title}
+              {AGENT_TITLE}
             </span>
           </Link>
 
@@ -56,13 +62,17 @@ export default function Navbar() {
 
             {/* Explore Dropdown */}
             <div className="relative group">
-              <button className="text-sm tracking-wide text-cream/80 hover:text-white transition-colors flex items-center gap-1">
+              <button
+                className="text-sm tracking-wide text-cream/80 hover:text-white transition-colors flex items-center gap-1"
+                aria-haspopup="true"
+              >
                 Explore
                 <svg
                   className="w-3.5 h-3.5 transition-transform group-hover:rotate-180"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
+                  aria-hidden="true"
                 >
                   <path
                     strokeLinecap="round"
@@ -72,12 +82,16 @@ export default function Navbar() {
                   />
                 </svg>
               </button>
-              <div className="absolute top-full left-0 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+              <div
+                className="absolute top-full left-0 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200"
+                role="menu"
+              >
                 <div className="bg-charcoal-light border border-white/10 rounded-lg py-2 min-w-[180px] shadow-xl">
                   {exploreLinks.map((link) => (
                     <Link
                       key={link.href}
                       href={link.href}
+                      role="menuitem"
                       className="block px-4 py-2 text-sm text-cream/80 hover:text-white hover:bg-white/5 transition-colors"
                     >
                       {link.label}
@@ -89,7 +103,7 @@ export default function Navbar() {
 
             <Link
               href="/contact"
-              className="text-sm tracking-wide bg-teal hover:bg-teal-light text-white px-5 py-2.5 rounded transition-colors"
+              className="text-sm tracking-wide bg-terra hover:bg-terra-light text-white px-5 py-2.5 rounded transition-colors"
             >
               Contact
             </Link>
@@ -98,7 +112,7 @@ export default function Navbar() {
           {/* Mobile Hamburger */}
           <button
             className="md:hidden text-cream"
-            onClick={() => setMobileOpen(true)}
+            onClick={handleOpen}
             aria-label="Open menu"
           >
             <svg
@@ -106,6 +120,7 @@ export default function Navbar() {
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
+              aria-hidden="true"
             >
               <path
                 strokeLinecap="round"
@@ -118,11 +133,13 @@ export default function Navbar() {
         </div>
       </nav>
 
-      <MobileMenu
-        open={mobileOpen}
-        onClose={() => setMobileOpen(false)}
-        exploreLinks={exploreLinks}
-      />
+      {mobileOpen && (
+        <MobileMenu
+          open={mobileOpen}
+          onClose={handleClose}
+          exploreLinks={exploreLinks}
+        />
+      )}
     </>
   );
 }

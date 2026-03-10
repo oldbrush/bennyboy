@@ -109,7 +109,7 @@ export default function MobileMenu({
           <Link
             href="/contact"
             onClick={onClose}
-            className="mt-4 text-center bg-teal hover:bg-teal-light text-white px-5 py-3 rounded transition-colors"
+            className="mt-4 text-center bg-terra hover:bg-terra-light text-white px-5 py-3 rounded transition-colors"
           >
             Contact
           </Link>

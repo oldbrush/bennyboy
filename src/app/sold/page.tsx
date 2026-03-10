@@ -4,7 +4,7 @@ import PropertyGrid from "@/components/PropertyGrid";
 import { getSoldProperties } from "@/data/properties";
 
 export const metadata: Metadata = {
-  title: "Sold Properties | Benjamin Harris Luxury Real Estate",
+  title: "Sold Properties",
   description:
     "View recently sold luxury properties by Benjamin Harris in Santa Barbara.",
 };

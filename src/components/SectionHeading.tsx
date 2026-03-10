@@ -22,7 +22,7 @@ export default function SectionHeading({
       </h2>
       {accent && (
         <div
-          className={`mt-4 h-0.5 w-16 bg-teal ${center ? "mx-auto" : ""}`}
+          className={`mt-4 h-0.5 w-16 bg-terra ${center ? "mx-auto" : ""}`}
         />
       )}
       {subtitle && (

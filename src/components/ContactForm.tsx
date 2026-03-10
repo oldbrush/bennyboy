@@ -14,7 +14,8 @@ export default function ContactForm() {
   function handleChange(
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
   }
 
   function handleSubmit(e: React.FormEvent) {
@@ -45,7 +46,7 @@ export default function ContactForm() {
           onChange={handleChange}
           placeholder="Full Name"
           required
-          className="w-full bg-transparent border-b border-white/20 py-3 text-white placeholder:text-cream/40 focus:outline-none focus:border-teal transition-colors"
+          className="w-full bg-transparent border-b border-white/20 py-3 text-white placeholder:text-cream/40 focus:outline-none focus:border-terra transition-colors"
         />
       </div>
       <div>
@@ -56,7 +57,7 @@ export default function ContactForm() {
           onChange={handleChange}
           placeholder="Email Address"
           required
-          className="w-full bg-transparent border-b border-white/20 py-3 text-white placeholder:text-cream/40 focus:outline-none focus:border-teal transition-colors"
+          className="w-full bg-transparent border-b border-white/20 py-3 text-white placeholder:text-cream/40 focus:outline-none focus:border-terra transition-colors"
         />
       </div>
       <div>
@@ -66,7 +67,7 @@ export default function ContactForm() {
           value={formData.phone}
           onChange={handleChange}
           placeholder="Phone Number"
-          className="w-full bg-transparent border-b border-white/20 py-3 text-white placeholder:text-cream/40 focus:outline-none focus:border-teal transition-colors"
+          className="w-full bg-transparent border-b border-white/20 py-3 text-white placeholder:text-cream/40 focus:outline-none focus:border-terra transition-colors"
         />
       </div>
       <div>
@@ -77,12 +78,12 @@ export default function ContactForm() {
           placeholder="Your Message"
           required
           rows={4}
-          className="w-full bg-transparent border-b border-white/20 py-3 text-white placeholder:text-cream/40 focus:outline-none focus:border-teal transition-colors resize-none"
+          className="w-full bg-transparent border-b border-white/20 py-3 text-white placeholder:text-cream/40 focus:outline-none focus:border-terra transition-colors resize-none"
         />
       </div>
       <button
         type="submit"
-        className="w-full bg-teal hover:bg-teal-light text-white py-3.5 rounded text-sm tracking-wide transition-colors"
+        className="w-full bg-terra hover:bg-terra-light text-white py-3.5 rounded text-sm tracking-wide transition-colors"
       >
         Send Message
       </button>

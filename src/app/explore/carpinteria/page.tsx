@@ -6,7 +6,7 @@ import { getNeighborhood } from "@/data/neighborhoods";
 import { getPropertiesByNeighborhood } from "@/data/properties";
 
 export const metadata: Metadata = {
-  title: "Carpinteria | Benjamin Harris Luxury Real Estate",
+  title: "Carpinteria",
   description:
     "Discover coastal living in Carpinteria, home of the world's safest beach.",
 };
@@ -37,7 +37,7 @@ export default function CarpinteriaPage() {
                 key={highlight}
                 className="flex items-start gap-3 p-4 rounded-lg border border-white/5"
               >
-                <span className="text-teal mt-0.5">&#10003;</span>
+                <span className="text-terra mt-0.5">&#10003;</span>
                 <span className="text-cream/70">{highlight}</span>
               </div>
             ))}

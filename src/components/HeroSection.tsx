@@ -31,6 +31,8 @@ export default function HeroSection({
         className="object-cover"
         priority
         sizes="100vw"
+        placeholder="empty"
+        style={{ backgroundColor: "rgb(28, 24, 20)" }}
       />
       {overlay && (
         <div className="absolute inset-0 bg-black/50" />
@@ -45,7 +47,7 @@ export default function HeroSection({
         {ctaText && (
           <Link
             href={ctaHref}
-            className="mt-8 inline-block bg-teal hover:bg-teal-light text-white px-8 py-3.5 rounded text-sm tracking-wide transition-colors"
+            className="mt-8 inline-block bg-terra hover:bg-terra-light text-white px-8 py-3.5 rounded text-sm tracking-wide transition-colors"
           >
             {ctaText}
           </Link>

@@ -15,11 +15,13 @@ export default function NeighborhoodHero({
     <section className="relative h-[50vh] flex items-center justify-center">
       <Image
         src={image}
-        alt={name}
+        alt={`${name} neighborhood`}
         fill
         className="object-cover"
         priority
         sizes="100vw"
+        placeholder="empty"
+        style={{ backgroundColor: "rgb(28, 24, 20)" }}
       />
       <div className="absolute inset-0 bg-black/50" />
       <div className="relative z-10 text-center px-6">

@@ -16,7 +16,7 @@ export default function NewsletterSection() {
   }
 
   return (
-    <section className="py-24 px-6 bg-teal">
+    <section className="py-24 px-6 bg-terra">
       <div className="max-w-2xl mx-auto text-center">
         <SectionHeading
           title="Stay Informed"
