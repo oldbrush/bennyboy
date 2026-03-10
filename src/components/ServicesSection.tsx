@@ -35,7 +35,7 @@ const services = [
 
 export default function ServicesSection() {
   return (
-    <section className="py-28 md:py-36 px-8 md:px-16 bg-charcoal-light">
+    <section className="py-28 md:py-36 px-8 md:px-16 bg-sandy">
       <div className="max-w-6xl mx-auto">
         <SectionHeading
           title="How We Can Help"
@@ -45,15 +45,15 @@ export default function ServicesSection() {
           {services.map((service) => (
             <div
               key={service.title}
-              className="group p-8 md:p-10 rounded-xl bg-charcoal/50 border border-charcoal-border hover:border-terra/20 transition-colors duration-300"
+              className="group p-8 md:p-10 rounded-xl bg-warm-white border border-sandy-dark/60 hover:border-terra/30 hover:shadow-lg transition-all duration-300"
             >
               <div className="w-12 h-12 rounded-lg bg-terra/10 flex items-center justify-center text-terra mb-6 group-hover:bg-terra/15 transition-colors duration-300">
                 {service.icon}
               </div>
-              <h3 className="font-serif text-xl font-semibold text-white mb-3">
+              <h3 className="font-serif text-xl font-semibold text-charcoal mb-3">
                 {service.title}
               </h3>
-              <p className="text-cream/50 leading-relaxed text-[15px]">
+              <p className="text-charcoal/50 leading-relaxed text-[15px]">
                 {service.description}
               </p>
             </div>

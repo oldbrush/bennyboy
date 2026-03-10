@@ -3,7 +3,7 @@ interface SectionHeadingProps {
   subtitle?: string;
   accent?: boolean;
   center?: boolean;
-  light?: boolean;
+  dark?: boolean;
 }
 
 export default function SectionHeading({
@@ -11,12 +11,12 @@ export default function SectionHeading({
   subtitle,
   accent = true,
   center = true,
-  light = false,
+  dark = false,
 }: SectionHeadingProps) {
   return (
     <div className={`mb-14 ${center ? "text-center" : ""}`}>
       <h2
-        className={`font-serif text-3xl md:text-4xl font-semibold ${light ? "text-charcoal" : "text-white"}`}
+        className={`font-serif text-3xl md:text-4xl font-semibold ${dark ? "text-white" : "text-charcoal"}`}
       >
         {title}
       </h2>
@@ -27,7 +27,7 @@ export default function SectionHeading({
       ) : null}
       {subtitle ? (
         <p
-          className={`mt-4 text-base md:text-lg ${light ? "text-charcoal/60" : "text-cream/50"}`}
+          className={`mt-4 text-base md:text-lg ${dark ? "text-cream/50" : "text-charcoal/50"}`}
         >
           {subtitle}
         </p>

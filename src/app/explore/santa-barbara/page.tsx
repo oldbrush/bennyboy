@@ -23,9 +23,9 @@ export default function SantaBarbaraPage() {
         tagline={neighborhood.tagline}
         image={neighborhood.heroImage}
       />
-      <section className="py-24 px-8 md:px-16 bg-charcoal">
+      <section className="py-24 px-8 md:px-16 bg-warm-white">
         <div className="max-w-4xl mx-auto text-center mb-16">
-          <p className="text-cream/60 text-lg leading-relaxed">
+          <p className="text-charcoal/60 text-lg leading-relaxed">
             {neighborhood.description}
           </p>
         </div>
@@ -35,10 +35,10 @@ export default function SantaBarbaraPage() {
             {neighborhood.highlights.map((highlight) => (
               <div
                 key={highlight}
-                className="flex items-start gap-3 p-5 rounded-xl bg-charcoal-light/50 border border-charcoal-border"
+                className="flex items-start gap-3 p-5 rounded-xl bg-sandy border border-sandy-dark/40"
               >
                 <span className="text-terra mt-0.5">&#10003;</span>
-                <span className="text-cream/70">{highlight}</span>
+                <span className="text-charcoal/70">{highlight}</span>
               </div>
             ))}
           </div>

@@ -26,10 +26,10 @@ export default function ContactForm() {
   if (submitted) {
     return (
       <div className="text-center py-12 px-6 rounded-xl bg-sage/10 border border-sage/20">
-        <h3 className="font-serif text-2xl font-semibold text-white mb-3">
+        <h3 className="font-serif text-2xl font-semibold text-charcoal mb-3">
           Message Sent
         </h3>
-        <p className="text-cream/60" role="status" aria-live="polite">
+        <p className="text-charcoal/60" role="status" aria-live="polite">
           Thank you for reaching out. Benjamin will be in touch shortly.
         </p>
       </div>
@@ -39,7 +39,7 @@ export default function ContactForm() {
   return (
     <form onSubmit={handleSubmit} className="space-y-6">
       <div>
-        <label htmlFor="contact-name" className="block text-[11px] tracking-[0.15em] uppercase text-cream/40 mb-2">
+        <label htmlFor="contact-name" className="block text-[11px] tracking-[0.15em] uppercase text-charcoal/40 mb-2">
           Full Name
         </label>
         <input
@@ -51,11 +51,11 @@ export default function ContactForm() {
           onChange={handleChange}
           placeholder="Your full name&hellip;"
           required
-          className="w-full bg-charcoal-light border border-charcoal-border rounded-lg px-4 py-3.5 text-white placeholder:text-cream/25 focus:outline-none focus:border-terra/50 transition-colors duration-200"
+          className="w-full bg-white border border-sandy-dark/50 rounded-lg px-4 py-3.5 text-charcoal placeholder:text-charcoal/30 focus:outline-none focus:border-terra/50 transition-colors duration-200"
         />
       </div>
       <div>
-        <label htmlFor="contact-email" className="block text-[11px] tracking-[0.15em] uppercase text-cream/40 mb-2">
+        <label htmlFor="contact-email" className="block text-[11px] tracking-[0.15em] uppercase text-charcoal/40 mb-2">
           Email Address
         </label>
         <input
@@ -68,11 +68,11 @@ export default function ContactForm() {
           placeholder="you@example.com"
           required
           spellCheck={false}
-          className="w-full bg-charcoal-light border border-charcoal-border rounded-lg px-4 py-3.5 text-white placeholder:text-cream/25 focus:outline-none focus:border-terra/50 transition-colors duration-200"
+          className="w-full bg-white border border-sandy-dark/50 rounded-lg px-4 py-3.5 text-charcoal placeholder:text-charcoal/30 focus:outline-none focus:border-terra/50 transition-colors duration-200"
         />
       </div>
       <div>
-        <label htmlFor="contact-phone" className="block text-[11px] tracking-[0.15em] uppercase text-cream/40 mb-2">
+        <label htmlFor="contact-phone" className="block text-[11px] tracking-[0.15em] uppercase text-charcoal/40 mb-2">
           Phone Number
         </label>
         <input
@@ -84,11 +84,11 @@ export default function ContactForm() {
           value={formData.phone}
           onChange={handleChange}
           placeholder="(805) 555-0100"
-          className="w-full bg-charcoal-light border border-charcoal-border rounded-lg px-4 py-3.5 text-white placeholder:text-cream/25 focus:outline-none focus:border-terra/50 transition-colors duration-200"
+          className="w-full bg-white border border-sandy-dark/50 rounded-lg px-4 py-3.5 text-charcoal placeholder:text-charcoal/30 focus:outline-none focus:border-terra/50 transition-colors duration-200"
         />
       </div>
       <div>
-        <label htmlFor="contact-message" className="block text-[11px] tracking-[0.15em] uppercase text-cream/40 mb-2">
+        <label htmlFor="contact-message" className="block text-[11px] tracking-[0.15em] uppercase text-charcoal/40 mb-2">
           Message
         </label>
         <textarea
@@ -99,7 +99,7 @@ export default function ContactForm() {
           placeholder="Tell us about your real estate goals&hellip;"
           required
           rows={5}
-          className="w-full bg-charcoal-light border border-charcoal-border rounded-lg px-4 py-3.5 text-white placeholder:text-cream/25 focus:outline-none focus:border-terra/50 transition-colors duration-200 resize-none"
+          className="w-full bg-white border border-sandy-dark/50 rounded-lg px-4 py-3.5 text-charcoal placeholder:text-charcoal/30 focus:outline-none focus:border-terra/50 transition-colors duration-200 resize-none"
         />
       </div>
       <button

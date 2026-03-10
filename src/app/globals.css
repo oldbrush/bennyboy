@@ -1,7 +1,12 @@
 @import "tailwindcss";
 
 @theme inline {
-  /* Dark Foundation — Night on the Riviera */
+  /* Light Foundation — Sun-Washed Stucco */
+  --color-warm-white: rgb(252, 249, 242);
+  --color-sandy: rgb(245, 239, 227);
+  --color-sandy-dark: rgb(235, 226, 210);
+
+  /* Dark Foundation — for Navbar, Footer, Hero overlays */
   --color-charcoal: rgb(28, 24, 20);
   --color-charcoal-light: rgb(40, 35, 32);
   --color-charcoal-border: rgb(53, 47, 42);
@@ -11,7 +16,7 @@
   --color-terra-light: rgb(198, 112, 76);
   --color-terra-dark: rgb(139, 74, 46);
 
-  /* Stucco & Stone — Body Text */
+  /* Stucco & Stone — Muted text on light backgrounds */
   --color-cream: rgb(250, 245, 235);
   --color-cream-dark: rgb(212, 197, 169);
   --color-adobe: rgb(194, 168, 130);
@@ -34,8 +39,8 @@
 }
 
 body {
-  background-color: rgb(28, 24, 20);
-  color: rgb(250, 245, 235);
+  background-color: rgb(252, 249, 242);
+  color: rgb(28, 24, 20);
   font-family: var(--font-lato), sans-serif;
 }
 
@@ -46,7 +51,7 @@ html {
 
 /* Accessible focus ring */
 :focus-visible {
-  outline: 2px solid rgb(198, 112, 76);
+  outline: 2px solid rgb(183, 94, 58);
   outline-offset: 2px;
 }
 

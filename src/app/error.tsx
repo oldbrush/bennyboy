@@ -8,16 +8,16 @@ export default function Error({
 }) {
   return (
     <>
-      <div className="h-24 md:h-28 bg-charcoal" />
-      <section className="min-h-[60vh] flex items-center justify-center px-8 md:px-16 bg-charcoal">
+      <div className="h-24 md:h-28 bg-warm-white" />
+      <section className="min-h-[60vh] flex items-center justify-center px-8 md:px-16 bg-warm-white">
         <div className="text-center max-w-md">
           <p className="text-[11px] tracking-[0.3em] uppercase text-terra mb-4">
             Error
           </p>
-          <h1 className="font-serif text-3xl md:text-4xl font-semibold text-white mb-4">
+          <h1 className="font-serif text-3xl md:text-4xl font-semibold text-charcoal mb-4">
             Something Went Wrong
           </h1>
-          <p className="text-cream/50 text-base mb-8">
+          <p className="text-charcoal/50 text-base mb-8">
             We encountered an unexpected error. Please try again.
           </p>
           <button

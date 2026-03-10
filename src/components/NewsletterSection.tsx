@@ -15,21 +15,21 @@ export default function NewsletterSection() {
   }
 
   return (
-    <section className="py-28 md:py-36 px-8 md:px-16 bg-charcoal-light">
+    <section className="py-28 md:py-36 px-8 md:px-16 bg-terra">
       <div className="max-w-2xl mx-auto text-center">
-        <p className="text-[11px] tracking-[0.3em] uppercase text-terra mb-4">
+        <p className="text-[11px] tracking-[0.3em] uppercase text-white/60 mb-4">
           Stay Connected
         </p>
         <h2 className="font-serif text-3xl md:text-4xl font-semibold text-white mb-4">
           Exclusive Market Updates
         </h2>
-        <p className="text-cream/50 text-base md:text-lg mb-10">
+        <p className="text-white/70 text-base md:text-lg mb-10">
           Be the first to know about new listings, market trends, and
           investment opportunities along the American Riviera.
         </p>
         {submitted ? (
-          <div className="py-6 px-8 rounded-xl bg-sage/10 border border-sage/20">
-            <p className="text-sage-light text-base" role="status" aria-live="polite">
+          <div className="py-6 px-8 rounded-xl bg-white/15 border border-white/20">
+            <p className="text-white text-base" role="status" aria-live="polite">
               Thank you for subscribing. We&apos;ll be in touch soon.
             </p>
           </div>
@@ -47,11 +47,11 @@ export default function NewsletterSection() {
               onChange={(e) => setEmail(e.target.value)}
               placeholder="Enter your email&hellip;"
               required
-              className="flex-1 px-5 py-4 rounded-lg bg-charcoal border border-charcoal-border text-white placeholder:text-cream/30 focus:outline-none focus:border-terra/50 transition-colors duration-200"
+              className="flex-1 px-5 py-4 rounded-lg bg-white/15 border border-white/25 text-white placeholder:text-white/40 focus:outline-none focus:border-white/60 transition-colors duration-200"
             />
             <button
               type="submit"
-              className="px-8 py-4 rounded-lg bg-terra hover:bg-terra-light text-white text-sm tracking-[0.08em] uppercase cursor-pointer transition-colors duration-200"
+              className="px-8 py-4 rounded-lg bg-charcoal hover:bg-charcoal-light text-white text-sm tracking-[0.08em] uppercase cursor-pointer transition-colors duration-200"
             >
               Subscribe
             </button>
