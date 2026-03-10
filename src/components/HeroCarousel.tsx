@@ -55,7 +55,7 @@ export default function HeroCarousel({
 
       <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/40 to-transparent" />
 
-      <div className="relative z-10 px-8 pb-12 md:pb-20 w-full hero-nav-align">
+      <div className="relative z-10 px-8 pb-32 md:pb-40 w-full hero-nav-align">
         <p className="text-xs tracking-[0.1em] uppercase text-adobe mb-6">
           Santa Barbara &middot; Montecito &middot; Carpinteria
         </p>
