@@ -18,11 +18,12 @@
 
   /* Trim & Detail — Iron & Foliage */
   --color-sage: rgb(90, 110, 85);
+  --color-sage-light: rgb(115, 140, 108);
   --color-slate: rgb(74, 94, 106);
   --color-iron: rgb(58, 48, 40);
 
   /* Typography */
-  --font-serif: var(--font-lusitana);
+  --font-serif: var(--font-playfair);
   --font-sans: var(--font-lato);
 }
 
@@ -40,4 +41,52 @@ body {
 
 html {
   scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Accessible focus ring */
+:focus-visible {
+  outline: 2px solid rgb(198, 112, 76);
+  outline-offset: 2px;
+}
+
+/* Remove default outline, only show on keyboard nav */
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* Balanced headings — prevent orphans */
+h1, h2, h3, h4 {
+  text-wrap: balance;
+}
+
+/* Readable paragraphs — prevent widows */
+p {
+  text-wrap: pretty;
+}
+
+/* Tabular numbers in price columns */
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Fast taps on mobile */
+a, button, [role="button"] {
+  touch-action: manipulation;
+}
+
+/* content-visibility: skip rendering off-screen property cards */
+.property-card {
+  content-visibility: auto;
+  contain-intrinsic-size: 0 420px;
 }

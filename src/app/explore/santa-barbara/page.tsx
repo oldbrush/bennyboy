@@ -17,7 +17,7 @@ export default function SantaBarbaraPage() {
 
   return (
     <>
-      <div className="h-20" />
+      <div className="h-24 md:h-28" />
       <NeighborhoodHero
         name={neighborhood.name}
         tagline={neighborhood.tagline}
@@ -35,7 +35,7 @@ export default function SantaBarbaraPage() {
             {neighborhood.highlights.map((highlight) => (
               <div
                 key={highlight}
-                className="flex items-start gap-3 p-4 rounded-lg border border-white/5"
+                className="flex items-start gap-3 p-5 rounded-xl bg-charcoal-light/50 border border-charcoal-border"
               >
                 <span className="text-terra mt-0.5">&#10003;</span>
                 <span className="text-cream/70">{highlight}</span>

@@ -1,13 +1,13 @@
 import type { Metadata, Viewport } from "next";
-import { Lusitana, Lato } from "next/font/google";
+import { Playfair_Display, Lato } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-const lusitana = Lusitana({
-  variable: "--font-lusitana",
+const playfair = Playfair_Display({
+  variable: "--font-playfair",
   subsets: ["latin"],
-  weight: ["400", "700"],
+  weight: ["400", "500", "600", "700"],
   display: "swap",
 });
 
@@ -47,7 +47,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${lusitana.variable} ${lato.variable} font-sans antialiased`}
+        className={`${playfair.variable} ${lato.variable} font-sans antialiased`}
       >
         <Navbar />
         <main>{children}</main>

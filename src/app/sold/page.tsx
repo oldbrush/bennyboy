@@ -14,8 +14,8 @@ export default function SoldPage() {
 
   return (
     <>
-      <div className="h-20 bg-charcoal" />
-      <section className="py-24 px-6 bg-charcoal">
+      <div className="h-24 md:h-28 bg-charcoal" />
+      <section className="py-24 md:py-32 px-6 bg-charcoal">
         <div className="max-w-7xl mx-auto">
           <SectionHeading
             title="Recently Sold"

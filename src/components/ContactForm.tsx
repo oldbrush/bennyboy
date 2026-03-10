@@ -25,11 +25,11 @@ export default function ContactForm() {
 
   if (submitted) {
     return (
-      <div className="text-center py-12">
-        <h3 className="font-serif text-2xl font-bold text-white mb-4">
+      <div className="text-center py-12 px-6 rounded-xl bg-sage/10 border border-sage/20">
+        <h3 className="font-serif text-2xl font-semibold text-white mb-3">
           Message Sent
         </h3>
-        <p className="text-cream/60">
+        <p className="text-cream/60" role="status" aria-live="polite">
           Thank you for reaching out. Benjamin will be in touch shortly.
         </p>
       </div>
@@ -39,51 +39,72 @@ export default function ContactForm() {
   return (
     <form onSubmit={handleSubmit} className="space-y-6">
       <div>
+        <label htmlFor="contact-name" className="block text-[11px] tracking-[0.15em] uppercase text-cream/40 mb-2">
+          Full Name
+        </label>
         <input
+          id="contact-name"
           type="text"
           name="name"
+          autoComplete="name"
           value={formData.name}
           onChange={handleChange}
-          placeholder="Full Name"
+          placeholder="Your full name&hellip;"
           required
-          className="w-full bg-transparent border-b border-white/20 py-3 text-white placeholder:text-cream/40 focus:outline-none focus:border-terra transition-colors"
+          className="w-full bg-charcoal-light border border-charcoal-border rounded-lg px-4 py-3.5 text-white placeholder:text-cream/25 focus:outline-none focus:border-terra/50 transition-colors duration-200"
         />
       </div>
       <div>
+        <label htmlFor="contact-email" className="block text-[11px] tracking-[0.15em] uppercase text-cream/40 mb-2">
+          Email Address
+        </label>
         <input
+          id="contact-email"
           type="email"
           name="email"
+          autoComplete="email"
           value={formData.email}
           onChange={handleChange}
-          placeholder="Email Address"
+          placeholder="you@example.com"
           required
-          className="w-full bg-transparent border-b border-white/20 py-3 text-white placeholder:text-cream/40 focus:outline-none focus:border-terra transition-colors"
+          spellCheck={false}
+          className="w-full bg-charcoal-light border border-charcoal-border rounded-lg px-4 py-3.5 text-white placeholder:text-cream/25 focus:outline-none focus:border-terra/50 transition-colors duration-200"
         />
       </div>
       <div>
+        <label htmlFor="contact-phone" className="block text-[11px] tracking-[0.15em] uppercase text-cream/40 mb-2">
+          Phone Number
+        </label>
         <input
+          id="contact-phone"
           type="tel"
           name="phone"
+          autoComplete="tel"
+          inputMode="tel"
           value={formData.phone}
           onChange={handleChange}
-          placeholder="Phone Number"
-          className="w-full bg-transparent border-b border-white/20 py-3 text-white placeholder:text-cream/40 focus:outline-none focus:border-terra transition-colors"
+          placeholder="(805) 555-0100"
+          className="w-full bg-charcoal-light border border-charcoal-border rounded-lg px-4 py-3.5 text-white placeholder:text-cream/25 focus:outline-none focus:border-terra/50 transition-colors duration-200"
         />
       </div>
       <div>
+        <label htmlFor="contact-message" className="block text-[11px] tracking-[0.15em] uppercase text-cream/40 mb-2">
+          Message
+        </label>
         <textarea
+          id="contact-message"
           name="message"
           value={formData.message}
           onChange={handleChange}
-          placeholder="Your Message"
+          placeholder="Tell us about your real estate goals&hellip;"
           required
-          rows={4}
-          className="w-full bg-transparent border-b border-white/20 py-3 text-white placeholder:text-cream/40 focus:outline-none focus:border-terra transition-colors resize-none"
+          rows={5}
+          className="w-full bg-charcoal-light border border-charcoal-border rounded-lg px-4 py-3.5 text-white placeholder:text-cream/25 focus:outline-none focus:border-terra/50 transition-colors duration-200 resize-none"
         />
       </div>
       <button
         type="submit"
-        className="w-full bg-terra hover:bg-terra-light text-white py-3.5 rounded text-sm tracking-wide transition-colors"
+        className="w-full bg-terra hover:bg-terra-light text-white py-4 rounded-lg text-sm tracking-[0.08em] uppercase cursor-pointer transition-colors duration-200"
       >
         Send Message
       </button>

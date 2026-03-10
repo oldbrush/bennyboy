@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import SectionHeading from "./SectionHeading";
 
 export default function NewsletterSection() {
   const [email, setEmail] = useState("");
@@ -16,30 +15,43 @@ export default function NewsletterSection() {
   }
 
   return (
-    <section className="py-24 px-6 bg-terra">
+    <section className="py-28 md:py-36 px-6 bg-charcoal-light">
       <div className="max-w-2xl mx-auto text-center">
-        <SectionHeading
-          title="Stay Informed"
-          subtitle="Get exclusive listings and market updates delivered to your inbox"
-          accent={false}
-        />
+        <p className="text-[11px] tracking-[0.3em] uppercase text-terra mb-4">
+          Stay Connected
+        </p>
+        <h2 className="font-serif text-3xl md:text-4xl font-semibold text-white mb-4">
+          Exclusive Market Updates
+        </h2>
+        <p className="text-cream/50 text-base md:text-lg mb-10">
+          Be the first to know about new listings, market trends, and
+          investment opportunities along the American Riviera.
+        </p>
         {submitted ? (
-          <p className="text-white/90 text-lg">
-            Thank you for subscribing! We&apos;ll be in touch soon.
-          </p>
+          <div className="py-6 px-8 rounded-xl bg-sage/10 border border-sage/20">
+            <p className="text-sage-light text-base" role="status" aria-live="polite">
+              Thank you for subscribing. We&apos;ll be in touch soon.
+            </p>
+          </div>
         ) : (
-          <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 mt-8">
+          <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3">
+            <label htmlFor="newsletter-email" className="sr-only">
+              Email address
+            </label>
             <input
+              id="newsletter-email"
               type="email"
+              name="email"
+              autoComplete="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              placeholder="Enter your email"
+              placeholder="Enter your email&hellip;"
               required
-              className="flex-1 px-4 py-3 rounded bg-white/10 border border-white/20 text-white placeholder:text-white/50 focus:outline-none focus:border-white/50 transition-colors"
+              className="flex-1 px-5 py-4 rounded-lg bg-charcoal border border-charcoal-border text-white placeholder:text-cream/30 focus:outline-none focus:border-terra/50 transition-colors duration-200"
             />
             <button
               type="submit"
-              className="px-8 py-3 rounded bg-charcoal hover:bg-charcoal-light text-white text-sm tracking-wide transition-colors"
+              className="px-8 py-4 rounded-lg bg-terra hover:bg-terra-light text-white text-sm tracking-[0.08em] uppercase cursor-pointer transition-colors duration-200"
             >
               Subscribe
             </button>

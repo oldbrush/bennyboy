@@ -14,24 +14,24 @@ export default function SectionHeading({
   light = false,
 }: SectionHeadingProps) {
   return (
-    <div className={`mb-12 ${center ? "text-center" : ""}`}>
+    <div className={`mb-14 ${center ? "text-center" : ""}`}>
       <h2
-        className={`font-serif text-3xl md:text-4xl font-bold ${light ? "text-charcoal" : "text-white"}`}
+        className={`font-serif text-3xl md:text-4xl font-semibold ${light ? "text-charcoal" : "text-white"}`}
       >
         {title}
       </h2>
-      {accent && (
+      {accent ? (
         <div
-          className={`mt-4 h-0.5 w-16 bg-terra ${center ? "mx-auto" : ""}`}
+          className={`mt-5 h-px w-12 bg-terra ${center ? "mx-auto" : ""}`}
         />
-      )}
-      {subtitle && (
+      ) : null}
+      {subtitle ? (
         <p
-          className={`mt-4 text-lg ${light ? "text-charcoal/70" : "text-cream/60"}`}
+          className={`mt-4 text-base md:text-lg ${light ? "text-charcoal/60" : "text-cream/50"}`}
         >
           {subtitle}
         </p>
-      )}
+      ) : null}
     </div>
   );
 }

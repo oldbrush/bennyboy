@@ -216,18 +216,41 @@ export const properties: Property[] = [
   },
 ];
 
+// Pre-computed property groups (single iteration)
+const { active, sold, featured, byNeighborhood } = (() => {
+  const active: Property[] = [];
+  const sold: Property[] = [];
+  const featured: Property[] = [];
+  const byNeighborhood: Record<string, Property[]> = {};
+
+  for (const p of properties) {
+    if (p.status === "active") active.push(p);
+    if (p.status === "sold") sold.push(p);
+    if (p.featured) featured.push(p);
+
+    const hood = byNeighborhood[p.neighborhood];
+    if (hood) {
+      hood.push(p);
+    } else {
+      byNeighborhood[p.neighborhood] = [p];
+    }
+  }
+
+  return { active, sold, featured, byNeighborhood };
+})();
+
 export function getActiveProperties() {
-  return properties.filter((p) => p.status === "active");
+  return active;
 }
 
 export function getSoldProperties() {
-  return properties.filter((p) => p.status === "sold");
+  return sold;
 }
 
 export function getFeaturedProperties() {
-  return properties.filter((p) => p.featured);
+  return featured;
 }
 
 export function getPropertiesByNeighborhood(slug: string) {
-  return properties.filter((p) => p.neighborhood === slug);
+  return byNeighborhood[slug] ?? [];
 }
