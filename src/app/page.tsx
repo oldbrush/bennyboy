@@ -46,7 +46,7 @@ export default function HomePage() {
       />
       <WelcomeSection />
       <ServicesSection />
-      <section className="min-h-[35vh] flex items-center justify-center px-8 md:px-16 py-10 bg-warm-white">
+      <section className="min-h-[35vh] flex items-center justify-center px-8 md:px-16 py-5 bg-warm-white">
         <div className="max-w-6xl mx-auto">
           <SectionHeading
             title="Featured Properties"

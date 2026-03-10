@@ -23,7 +23,8 @@ export default function MontecitoPage() {
         tagline={neighborhood.tagline}
         image={neighborhood.heroImage}
       />
-      <section className="py-24 px-8 md:px-16 bg-warm-white">
+      <section className="min-h-[calc(100vh-6rem)] flex items-center justify-center py-24 px-8 md:px-16 bg-warm-white">
+        <div className="w-full">
         <div className="max-w-4xl mx-auto text-center mb-16">
           <p className="text-charcoal/60 text-lg leading-relaxed">
             {neighborhood.description}
@@ -47,6 +48,7 @@ export default function MontecitoPage() {
             subtitle="Available and recently sold homes in this area"
           />
           <PropertyGrid properties={properties} showSoldBadge />
+        </div>
         </div>
       </section>
     </>

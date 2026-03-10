@@ -35,7 +35,7 @@ const services = [
 
 export default function ServicesSection() {
   return (
-    <section className="min-h-[35vh] flex items-center justify-center px-8 md:px-16 py-10 bg-sandy">
+    <section className="min-h-[35vh] flex items-center justify-center px-8 md:px-16 py-5 bg-sandy">
       <div className="max-w-6xl mx-auto">
         <SectionHeading
           title="How We Can Help"

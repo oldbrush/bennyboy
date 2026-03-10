@@ -18,8 +18,8 @@ export default function AboutPage() {
     <>
       <div className="h-24 md:h-28 bg-warm-white" />
 
-      <section className="py-24 md:py-32 px-8 md:px-16 bg-warm-white">
-        <div className="max-w-6xl mx-auto">
+      <section className="min-h-[calc(100vh-6rem)] flex items-center justify-center py-24 md:py-32 px-8 md:px-16 bg-warm-white">
+        <div className="max-w-6xl mx-auto w-full">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-20 items-center">
             {/* Headshot */}
             <div className="relative aspect-[3/4] rounded-xl overflow-hidden shadow-lg">

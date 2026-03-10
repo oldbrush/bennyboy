@@ -13,8 +13,8 @@ export default function ContactPage() {
   return (
     <>
       <div className="h-24 md:h-28 bg-warm-white" />
-      <section className="py-24 md:py-32 px-8 md:px-16 bg-warm-white">
-        <div className="max-w-6xl mx-auto">
+      <section className="min-h-[calc(100vh-6rem)] flex items-center justify-center py-24 md:py-32 px-8 md:px-16 bg-warm-white">
+        <div className="max-w-6xl mx-auto w-full">
           <SectionHeading
             title="Get in Touch"
             subtitle="Ready to find your dream home? Let&apos;s start the conversation."
