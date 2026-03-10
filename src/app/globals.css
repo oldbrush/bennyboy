@@ -100,6 +100,16 @@ a, button, [role="button"] {
   --duration-page: 300ms;
 }
 
+
+/* Align hero text with navbar "Benjamin Harris" on desktop */
+/* Navbar: md:left-10 (40px) + border (1px) + md:px-16 (64px) = 105px */
+@media (min-width: 768px) {
+  .hero-nav-align {
+    padding-left: 105px !important;
+    padding-right: 105px !important;
+  }
+}
+
 /* content-visibility: skip rendering off-screen property cards */
 .property-card {
   content-visibility: auto;

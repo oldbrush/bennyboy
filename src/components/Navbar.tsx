@@ -23,9 +23,9 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="fixed top-0 left-0 right-0 z-50 md:top-4 md:left-6 md:right-6">
+      <nav className="fixed top-0 left-0 right-0 z-50 md:top-4 md:left-10 md:right-10">
         <div className="bg-warm-white/80 backdrop-blur-lg md:rounded-xl border-b border-sandy-dark/20 md:border md:border-sandy-dark/15 md:shadow-lg">
-          <div className="px-6 md:px-8 flex items-center justify-between h-20">
+          <div className="px-8 md:px-16 flex items-center justify-between h-20">
             <Link href="/" className="flex flex-col group">
               <span className="font-serif text-xl font-bold tracking-wide text-charcoal group-hover:text-terra transition-colors duration-150">
                 {AGENT_NAME}

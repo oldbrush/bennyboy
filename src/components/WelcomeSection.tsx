@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function WelcomeSection() {
   return (
-    <section className="min-h-dvh flex items-center justify-center px-8 md:px-16 py-20 bg-warm-white">
+    <section className="min-h-[35vh] flex items-center justify-center px-8 md:px-16 py-10 bg-warm-white">
       <div className="max-w-3xl mx-auto text-center">
         <p className="text-[11px] tracking-[0.1em] uppercase text-terra mb-3">
           The American Riviera

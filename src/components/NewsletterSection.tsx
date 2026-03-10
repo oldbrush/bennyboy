@@ -20,7 +20,7 @@ export default function NewsletterSection() {
   }
 
   return (
-    <section className="min-h-dvh flex items-center justify-center px-8 md:px-16 py-20 bg-terra">
+    <section className="min-h-[35vh] flex items-center justify-center px-8 md:px-16 py-10 bg-terra">
       <div className="max-w-2xl mx-auto text-center">
         <p className="text-[11px] tracking-[0.1em] uppercase text-white/60 mb-3">
           Stay Connected

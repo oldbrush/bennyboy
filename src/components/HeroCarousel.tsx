@@ -55,8 +55,8 @@ export default function HeroCarousel({
 
       <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/40 to-transparent" />
 
-      <div className="relative z-10 px-8 md:px-16 pb-8 md:pb-16 w-full max-w-7xl mx-auto">
-        <p className="text-xs tracking-[0.1em] uppercase text-adobe mb-4">
+      <div className="relative z-10 px-8 pb-12 md:pb-20 w-full hero-nav-align">
+        <p className="text-xs tracking-[0.1em] uppercase text-adobe mb-6">
           Santa Barbara &middot; Montecito &middot; Carpinteria
         </p>
         <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-[1.1] tracking-tight max-w-4xl">
@@ -70,7 +70,7 @@ export default function HeroCarousel({
         {ctaText ? (
           <Link
             href={ctaHref}
-            className="mt-10 inline-flex items-center gap-2 bg-terra hover:bg-terra-light text-white px-8 py-4 rounded-lg text-sm tracking-[0.08em] uppercase transition-colors duration-150"
+            className="mt-14 inline-flex items-center gap-2 bg-terra hover:bg-terra-light text-white px-8 py-4 rounded-lg text-sm tracking-[0.08em] uppercase transition-colors duration-150"
           >
             {ctaText}
             <svg
@@ -91,7 +91,7 @@ export default function HeroCarousel({
         ) : null}
 
         {/* Dot indicators */}
-        <div className="flex gap-2.5 mt-10" role="tablist" aria-label="Hero images">
+        <div className="flex gap-2.5 mt-14" role="tablist" aria-label="Hero images">
           {images.map((_, i) => (
             <button
               key={i}
