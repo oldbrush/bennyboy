@@ -20,7 +20,7 @@ export default function NewsletterSection() {
   }
 
   return (
-    <section className="py-28 md:py-36 px-8 md:px-16 bg-terra">
+    <section className="py-36 md:py-44 px-8 md:px-16 bg-terra">
       <div className="max-w-2xl mx-auto text-center">
         <p className="text-[11px] tracking-[0.1em] uppercase text-white/60 mb-4">
           Stay Connected
@@ -39,7 +39,7 @@ export default function NewsletterSection() {
             </p>
           </div>
         ) : (
-          <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3">
+          <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 sm:justify-center mx-auto max-w-lg">
             <label htmlFor="newsletter-email" className="sr-only">
               Email address
             </label>
