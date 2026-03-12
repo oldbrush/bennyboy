@@ -15,10 +15,10 @@ export default function TestimonialsSection() {
       className="relative py-24 bg-cover bg-center bg-fixed"
       style={{
         backgroundImage:
-          "url('https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=1920&h=1080&fit=crop')",
+          "url('https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=1920&h=1080&fit=crop')",
       }}
     >
-      <div className="absolute inset-0 bg-black/60" />
+      <div className="absolute inset-0 bg-[#2c1810]/70" />
       <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
         <h2 className="heading-lg text-white mb-4">What Our Clients Say</h2>
         <p className="text-white/60 text-sm uppercase tracking-widest mb-12">
@@ -28,7 +28,7 @@ export default function TestimonialsSection() {
         <div className="min-h-[200px] flex items-center justify-center">
           <div>
             <svg
-              className="w-12 h-12 text-primary mx-auto mb-6"
+              className="w-12 h-12 text-gold mx-auto mb-6"
               fill="currentColor"
               viewBox="0 0 24 24"
             >

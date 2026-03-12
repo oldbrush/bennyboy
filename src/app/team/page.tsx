@@ -14,7 +14,7 @@ export default function TeamPage() {
       <PageHero
         title="About"
         subtitle={`Meet ${siteConfig.ownerName}`}
-        image="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1920&h=800&fit=crop"
+        image="https://images.unsplash.com/photo-1500076656116-558758c991c1?w=1920&h=800&fit=crop"
       />
 
       <section className="section-padding">
@@ -23,7 +23,7 @@ export default function TeamPage() {
             {/* Image */}
             <div className="relative">
               <img
-                src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=800&h=1000&fit=crop"
+                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=1000&fit=crop"
                 alt={siteConfig.ownerName}
                 className="w-full h-auto object-cover"
               />
@@ -117,7 +117,7 @@ export default function TeamPage() {
       </section>
 
       {/* Services */}
-      <section className="section-padding bg-gray-50">
+      <section className="section-padding bg-cream">
         <div className="max-w-7xl mx-auto">
           <h2 className="heading-md text-gray-900 text-center mb-12">
             Services

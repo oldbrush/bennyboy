@@ -12,31 +12,31 @@ const steps = [
     title: "Initial Consultation",
     description:
       "We begin with a thorough discussion of your goals, timeline, and expectations. Ben will evaluate your property and provide a detailed market analysis to establish the optimal listing strategy.",
-    image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1505843513577-22bb7d21e455?w=600&h=400&fit=crop",
   },
   {
     title: "Strategic Pricing",
     description:
       "Leveraging decades of market expertise and comprehensive comparable analysis, Ben will recommend a pricing strategy designed to maximize your return while attracting qualified buyers.",
-    image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1416331108676-a22ccb276e35?w=600&h=400&fit=crop",
   },
   {
     title: "Property Preparation",
     description:
       "From staging recommendations to pre-listing improvements, Ben will guide you through preparing your home to make the best possible first impression on potential buyers.",
-    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1518780664697-55e3ad937233?w=600&h=400&fit=crop",
   },
   {
     title: "Marketing & Exposure",
     description:
       "Your property will receive maximum exposure through professional photography, virtual tours, targeted digital marketing, print advertising, and Ben's extensive network of qualified buyers and agents.",
-    image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1564078516393-cf04bd966897?w=600&h=400&fit=crop",
   },
   {
     title: "Negotiation & Closing",
     description:
       "Ben's expert negotiation skills ensure you receive the best possible terms. He manages every detail from offer review through closing, keeping you informed and confident at every step.",
-    image: "https://images.unsplash.com/photo-1600573472591-ee6b68d14c68?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1449844908441-8829872d2607?w=600&h=400&fit=crop",
   },
 ];
 
@@ -46,7 +46,7 @@ export default function SellersGuidePage() {
       <PageHero
         title="Seller's Guide"
         subtitle="Your roadmap to a successful home sale"
-        image="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=1920&h=800&fit=crop"
+        image="https://images.unsplash.com/photo-1523217582562-09d0def993a6?w=1920&h=800&fit=crop"
       />
 
       <section className="section-padding">

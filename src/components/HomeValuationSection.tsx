@@ -10,7 +10,7 @@ export default function HomeValuationSection() {
       className="relative py-24 bg-cover bg-center bg-fixed"
       style={{
         backgroundImage:
-          "url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1920&h=1080&fit=crop')",
+          "url('https://images.unsplash.com/photo-1510798831971-661eb04b3739?w=1920&h=1080&fit=crop')",
       }}
     >
       <div className="absolute inset-0 bg-primary/85" />

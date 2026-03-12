@@ -3,14 +3,14 @@ import { siteConfig } from "@/data/siteConfig";
 
 export default function AgentSection() {
   return (
-    <section className="section-padding bg-gray-50">
+    <section className="section-padding bg-cream">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Image */}
           <div className="relative">
             <div className="relative h-[500px] md:h-[600px] overflow-hidden">
               <img
-                src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=800&h=1000&fit=crop"
+                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=1000&fit=crop"
                 alt={siteConfig.ownerName}
                 className="w-full h-full object-cover"
               />

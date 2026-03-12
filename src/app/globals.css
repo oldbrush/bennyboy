@@ -1,13 +1,19 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #006298;
-  --color-primary-dark: #004d7a;
-  --color-primary-light: #0080c4;
-  --color-gold: #c4a265;
-  --color-gold-light: #d4b87a;
-  --font-heading: "Poppins", sans-serif;
-  --font-body: "Montserrat", sans-serif;
+  --color-primary: #5c6b4f;
+  --color-primary-dark: #4a5740;
+  --color-primary-light: #7a8c6a;
+  --color-gold: #b8956a;
+  --color-gold-light: #c9a87e;
+  --color-cream: #f5f0e8;
+  --color-cream-dark: #e8e0d0;
+  --color-charcoal: #2c2c2c;
+  --color-warm-gray: #8a7e72;
+  --color-barn: #7c3a2e;
+  --color-barn-light: #964a3c;
+  --font-heading: "Playfair Display", Georgia, serif;
+  --font-body: "Lato", "Montserrat", sans-serif;
 }
 
 @layer base {
@@ -16,7 +22,8 @@
   }
   body {
     font-family: var(--font-body);
-    color: #1a1a1a;
+    color: #2c2c2c;
+    background-color: #faf8f4;
     -webkit-font-smoothing: antialiased;
   }
   h1, h2, h3, h4, h5, h6 {
@@ -38,13 +45,13 @@
     @apply py-20 px-4 md:px-8 lg:px-16;
   }
   .heading-xl {
-    @apply text-4xl md:text-5xl lg:text-6xl font-light uppercase tracking-wide;
+    @apply text-4xl md:text-5xl lg:text-6xl font-light tracking-wide;
   }
   .heading-lg {
-    @apply text-3xl md:text-4xl font-light uppercase tracking-wide;
+    @apply text-3xl md:text-4xl font-light tracking-wide;
   }
   .heading-md {
-    @apply text-2xl md:text-3xl font-light uppercase tracking-wide;
+    @apply text-2xl md:text-3xl font-light tracking-wide;
   }
 }
 
@@ -53,9 +60,9 @@
   width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: #f5f0e8;
 }
 ::-webkit-scrollbar-thumb {
-  background: #006298;
+  background: #5c6b4f;
   border-radius: 4px;
 }

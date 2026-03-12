@@ -14,7 +14,7 @@ export default function ContactPage() {
       <PageHero
         title="Contact"
         subtitle="Let's start a conversation about your real estate goals"
-        image="https://images.unsplash.com/photo-1506953823976-52e1fdc0149a?w=1920&h=800&fit=crop"
+        image="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1920&h=800&fit=crop"
       />
 
       <section className="section-padding">

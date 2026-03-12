@@ -17,7 +17,7 @@ export const neighborhoods: Neighborhood[] = [
     tagline: "The Crown Jewel of the American Riviera",
     description:
       "An exclusive community just a few miles south of Santa Barbara, Montecito is home to some of the most impressive and expensive real estate in the world. This premier destination has long attracted celebrities, business leaders, and those seeking the ultimate California lifestyle. With its lush landscapes, world-class dining, and proximity to pristine beaches, Montecito offers an unparalleled quality of life.",
-    image: "https://images.unsplash.com/photo-1519046904884-53103b34b206?w=1200&h=800&fit=crop",
+    image: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1200&h=800&fit=crop",
     population: "8,823",
     medianAge: "51.8",
     avgIncome: "$132,404",
@@ -35,7 +35,7 @@ export const neighborhoods: Neighborhood[] = [
     tagline: "The American Riviera",
     description:
       "Known as the American Riviera, Santa Barbara is a stunning coastal city nestled between the Santa Ynez Mountains and the Pacific Ocean. With its iconic red-tile roofs, Spanish Colonial architecture, and year-round Mediterranean climate, Santa Barbara offers a lifestyle that blends cultural sophistication with laid-back coastal living. From Stearns Wharf to State Street, the city exudes charm at every turn.",
-    image: "https://images.unsplash.com/photo-1506953823976-52e1fdc0149a?w=1200&h=800&fit=crop",
+    image: "https://images.unsplash.com/photo-1500076656116-558758c991c1?w=1200&h=800&fit=crop",
     population: "88,665",
     medianAge: "36.4",
     avgIncome: "$78,591",
@@ -53,7 +53,7 @@ export const neighborhoods: Neighborhood[] = [
     tagline: "The World's Safest Beach",
     description:
       "A charming beach town just south of Montecito, Carpinteria is known for its gentle waves, family-friendly atmosphere, and tight-knit community. The town boasts what many call the 'World's Safest Beach' thanks to its natural reef breakwater. With organic farms, local artisan shops, and stunning Padaro Lane beachfront estates, Carpinteria offers a more relaxed pace of coastal living.",
-    image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&h=800&fit=crop",
+    image: "https://images.unsplash.com/photo-1500595046743-cd271d694d30?w=1200&h=800&fit=crop",
     population: "16,515",
     medianAge: "43.6",
     avgIncome: "$56,010",

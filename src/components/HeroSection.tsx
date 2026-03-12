@@ -9,46 +9,38 @@ export default function HeroSection() {
 
   return (
     <section className="relative h-screen min-h-[700px] flex items-center justify-center overflow-hidden">
-      {/* Video Background */}
-      <video
-        autoPlay
-        muted
-        loop
-        playsInline
+      {/* Background Image — rolling hills and oak trees at golden hour */}
+      <img
+        src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1920&h=1080&fit=crop"
+        alt="Golden rolling hills"
         className="absolute inset-0 w-full h-full object-cover"
-        poster="https://images.unsplash.com/photo-1518684079-3c830dcef090?w=1920&h=1080&fit=crop"
-      >
-        <source
-          src="https://player.vimeo.com/external/370331493.sd.mp4?s=e90dcaba73c19e0e36f03406b47bbd6992dd6c1c&profile_id=139&oauth2_token_id=57447761"
-          type="video/mp4"
-        />
-      </video>
+      />
 
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-black/45" />
+      {/* Warm overlay */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-[#2c1810]/60" />
 
       {/* Content */}
       <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
-        <h1 className="heading-xl mb-4 leading-tight">
-          Live the Santa Barbara
-          <span className="block">Lifestyle</span>
-        </h1>
-        <p className="text-lg md:text-xl font-light mb-3 tracking-wide font-body">
-          {siteConfig.ownerName} — {siteConfig.businessName}
+        <p className="text-gold text-sm uppercase tracking-[0.3em] mb-6 font-body">
+          {siteConfig.businessName}
         </p>
+        <h1 className="heading-xl mb-6 leading-tight italic">
+          Live the Santa Barbara
+          <span className="block not-italic font-light">Lifestyle</span>
+        </h1>
         <p className="text-base md:text-lg text-white/80 mb-10 max-w-2xl mx-auto font-light">
-          Your trusted guide to luxury real estate along the American Riviera
+          Land, homes, and the art of country living along the American Riviera
         </p>
 
         {/* Search Bar */}
         <div className="max-w-2xl mx-auto">
-          <div className="flex bg-white rounded-sm overflow-hidden shadow-2xl">
+          <div className="flex bg-white/95 backdrop-blur-sm rounded-sm overflow-hidden shadow-2xl">
             <input
               type="text"
               placeholder="Search by city, neighborhood, or address..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="flex-1 px-6 py-4 text-gray-800 text-sm placeholder-gray-400 outline-none font-body"
+              className="flex-1 px-6 py-4 text-charcoal text-sm placeholder-warm-gray outline-none font-body bg-transparent"
             />
             <Link
               href="/properties"
@@ -67,7 +59,7 @@ export default function HeroSection() {
           <Link href="/neighborhoods" className="btn-outline text-xs">
             Explore Neighborhoods
           </Link>
-          <Link href="/contact" className="btn-outline text-xs">
+          <Link href="/contact" className="btn-gold text-xs">
             Schedule Consultation
           </Link>
         </div>

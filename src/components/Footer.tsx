@@ -3,7 +3,7 @@ import { siteConfig, navLinks } from "@/data/siteConfig";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#0a1628] text-white">
+    <footer className="bg-[#1e1a15] text-white">
       {/* Main Footer */}
       <div className="max-w-7xl mx-auto px-4 md:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">

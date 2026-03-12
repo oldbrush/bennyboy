@@ -14,7 +14,7 @@ export default function PropertiesPage() {
       <PageHero
         title="Properties"
         subtitle="Explore luxury homes across the American Riviera"
-        image="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1920&h=800&fit=crop"
+        image="https://images.unsplash.com/photo-1510798831971-661eb04b3739?w=1920&h=800&fit=crop"
       />
       <section className="section-padding">
         <div className="max-w-7xl mx-auto">

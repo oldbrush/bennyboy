@@ -13,7 +13,7 @@ export default function TestimonialsPage() {
       <PageHero
         title="Testimonials"
         subtitle="Hear what our clients say"
-        image="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=1920&h=800&fit=crop"
+        image="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=1920&h=800&fit=crop"
       />
       <section className="section-padding">
         <div className="max-w-4xl mx-auto space-y-12">

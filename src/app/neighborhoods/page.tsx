@@ -14,7 +14,7 @@ export default function NeighborhoodsPage() {
       <PageHero
         title="Neighborhoods"
         subtitle="Discover the communities that make the American Riviera one of the most coveted destinations in the world"
-        image="https://images.unsplash.com/photo-1506953823976-52e1fdc0149a?w=1920&h=800&fit=crop"
+        image="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1920&h=800&fit=crop"
       />
       <section className="section-padding">
         <div className="max-w-7xl mx-auto">

@@ -3,7 +3,7 @@ import { neighborhoods } from "@/data/neighborhoods";
 
 export default function GallerySection() {
   return (
-    <section className="bg-[#0a1628] section-padding">
+    <section className="bg-[#2a2318] section-padding">
       <div className="max-w-7xl mx-auto">
         <h2 className="heading-lg text-white text-center mb-4">
           Explore Our Neighborhoods

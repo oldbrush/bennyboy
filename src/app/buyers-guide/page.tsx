@@ -12,31 +12,31 @@ const steps = [
     title: "Define Your Vision",
     description:
       "We start by understanding your lifestyle, priorities, and budget. Whether you're seeking a beachfront estate, mountain retreat, or village charmer, Ben will curate a personalized search strategy.",
-    image: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1480074568708-e7b720bb3f09?w=600&h=400&fit=crop",
   },
   {
     title: "Get Pre-Approved",
     description:
       "Ben works with top local lenders to help you secure pre-approval, giving you a competitive edge in the market. Knowing your purchasing power is the first step to a confident offer.",
-    image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1416331108676-a22ccb276e35?w=600&h=400&fit=crop",
   },
   {
     title: "Property Tours",
     description:
       "Experience curated property tours tailored to your criteria. Ben's insider knowledge often provides access to off-market listings and upcoming inventory before they hit the public market.",
-    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1510798831971-661eb04b3739?w=600&h=400&fit=crop",
   },
   {
     title: "Making an Offer",
     description:
       "When you find the right home, Ben's expert negotiation skills and market insights ensure your offer is strategically positioned to win — at the best possible price and terms.",
-    image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1564078516393-cf04bd966897?w=600&h=400&fit=crop",
   },
   {
     title: "Closing & Beyond",
     description:
       "From inspections and appraisals through closing day, Ben manages every detail. And his commitment doesn't end at closing — he remains your trusted resource for all things real estate.",
-    image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&h=400&fit=crop",
+    image: "https://images.unsplash.com/photo-1505843513577-22bb7d21e455?w=600&h=400&fit=crop",
   },
 ];
 
@@ -46,7 +46,7 @@ export default function BuyersGuidePage() {
       <PageHero
         title="Buyer's Guide"
         subtitle="Your path to finding the perfect home"
-        image="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1920&h=800&fit=crop"
+        image="https://images.unsplash.com/photo-1449844908441-8829872d2607?w=1920&h=800&fit=crop"
       />
 
       <section className="section-padding">
