@@ -7,6 +7,13 @@ export const metadata: Metadata = {
   title: "Harris Land & Home | Santa Barbara Real Estate",
   description:
     "Ben Harris — your trusted Santa Barbara and Montecito real estate expert. Specializing in luxury homes, estates, and the Santa Barbara lifestyle.",
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "32x32" },
+      { url: "/favicon.png", type: "image/png", sizes: "1024x1024" },
+    ],
+    apple: "/favicon.png",
+  },
 };
 
 export default function RootLayout({
