@@ -1,0 +1,156 @@
+export interface Property {
+  id: string;
+  address: string;
+  city: string;
+  state: string;
+  zip: string;
+  price: string;
+  beds: number;
+  baths: number;
+  sqft: string;
+  image: string;
+  status: "active" | "pending" | "sold";
+  featured: boolean;
+  description: string;
+}
+
+export const properties: Property[] = [
+  {
+    id: "1",
+    address: "2845 Eucalyptus Hill Rd",
+    city: "Santa Barbara",
+    state: "CA",
+    zip: "93108",
+    price: "$4,995,000",
+    beds: 5,
+    baths: 5,
+    sqft: "4,850",
+    image: "https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800&h=600&fit=crop",
+    status: "active",
+    featured: true,
+    description: "Stunning Mediterranean estate with panoramic ocean and mountain views.",
+  },
+  {
+    id: "2",
+    address: "1234 Mountain Dr",
+    city: "Montecito",
+    state: "CA",
+    zip: "93108",
+    price: "$8,750,000",
+    beds: 6,
+    baths: 7,
+    sqft: "7,200",
+    image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&h=600&fit=crop",
+    status: "active",
+    featured: true,
+    description: "Exquisite Montecito estate on 2.5 acres with world-class gardens.",
+  },
+  {
+    id: "3",
+    address: "567 Coast Village Cir",
+    city: "Montecito",
+    state: "CA",
+    zip: "93108",
+    price: "$3,250,000",
+    beds: 4,
+    baths: 3,
+    sqft: "3,100",
+    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&h=600&fit=crop",
+    status: "active",
+    featured: true,
+    description: "Charming Coast Village retreat steps from boutiques and cafes.",
+  },
+  {
+    id: "4",
+    address: "890 Channel Dr",
+    city: "Santa Barbara",
+    state: "CA",
+    zip: "93108",
+    price: "$12,500,000",
+    beds: 7,
+    baths: 8,
+    sqft: "9,400",
+    image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&h=600&fit=crop",
+    status: "active",
+    featured: true,
+    description: "Iconic oceanfront estate with private beach access and guest house.",
+  },
+  {
+    id: "5",
+    address: "432 Butterfly Ln",
+    city: "Montecito",
+    state: "CA",
+    zip: "93108",
+    price: "$6,900,000",
+    beds: 5,
+    baths: 6,
+    sqft: "5,600",
+    image: "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800&h=600&fit=crop",
+    status: "active",
+    featured: false,
+    description: "Contemporary masterpiece with infinity pool and mountain views.",
+  },
+  {
+    id: "6",
+    address: "171 Coronada Cir",
+    city: "Montecito",
+    state: "CA",
+    zip: "93108",
+    price: "$5,495,000",
+    beds: 4,
+    baths: 5,
+    sqft: "4,200",
+    image: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&h=600&fit=crop",
+    status: "pending",
+    featured: false,
+    description: "Elegant single-level estate in the heart of Montecito.",
+  },
+];
+
+export const soldProperties: Property[] = [
+  {
+    id: "s1",
+    address: "2100 Padaro Ln",
+    city: "Carpinteria",
+    state: "CA",
+    zip: "93013",
+    price: "$7,200,000",
+    beds: 5,
+    baths: 5,
+    sqft: "5,100",
+    image: "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=800&h=600&fit=crop",
+    status: "sold",
+    featured: false,
+    description: "Beachfront living at its finest on Padaro Lane.",
+  },
+  {
+    id: "s2",
+    address: "945 Hot Springs Rd",
+    city: "Montecito",
+    state: "CA",
+    zip: "93108",
+    price: "$9,800,000",
+    beds: 6,
+    baths: 7,
+    sqft: "8,200",
+    image: "https://images.unsplash.com/photo-1600573472591-ee6b68d14c68?w=800&h=600&fit=crop",
+    status: "sold",
+    featured: false,
+    description: "Grand Hot Springs estate with pool, tennis, and guest quarters.",
+  },
+  {
+    id: "s3",
+    address: "333 E Pedregosa St",
+    city: "Santa Barbara",
+    state: "CA",
+    zip: "93101",
+    price: "$2,450,000",
+    beds: 3,
+    baths: 3,
+    sqft: "2,400",
+    image: "https://images.unsplash.com/photo-1605146769289-440113cc3d00?w=800&h=600&fit=crop",
+    status: "sold",
+    featured: false,
+    description: "Downtown Santa Barbara gem with city and ocean views.",
+  },
+];

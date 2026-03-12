@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #006298;
+  --color-primary-dark: #004d7a;
+  --color-primary-light: #0080c4;
+  --color-gold: #c4a265;
+  --color-gold-light: #d4b87a;
+  --font-heading: "Poppins", sans-serif;
+  --font-body: "Montserrat", sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: var(--font-body);
+    color: #1a1a1a;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary text-white px-8 py-3 uppercase tracking-wider text-sm font-medium transition-all duration-300 hover:bg-primary-dark;
+  }
+  .btn-outline {
+    @apply border-2 border-white text-white px-8 py-3 uppercase tracking-wider text-sm font-medium transition-all duration-300 hover:bg-white hover:text-primary;
+  }
+  .btn-gold {
+    @apply bg-gold text-white px-8 py-3 uppercase tracking-wider text-sm font-medium transition-all duration-300 hover:bg-gold-light;
+  }
+  .section-padding {
+    @apply py-20 px-4 md:px-8 lg:px-16;
+  }
+  .heading-xl {
+    @apply text-4xl md:text-5xl lg:text-6xl font-light uppercase tracking-wide;
+  }
+  .heading-lg {
+    @apply text-3xl md:text-4xl font-light uppercase tracking-wide;
+  }
+  .heading-md {
+    @apply text-2xl md:text-3xl font-light uppercase tracking-wide;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #006298;
+  border-radius: 4px;
+}
