@@ -22,8 +22,15 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-4 md:px-8 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-3">
+          <img
+            src="/images/logo.png"
+            alt={siteConfig.businessName}
+            className={`h-10 md:h-12 w-auto transition-all ${
+              scrolled ? "" : "brightness-0 invert"
+            }`}
+          />
           <span
-            className={`font-heading text-xl md:text-2xl font-semibold uppercase tracking-wider transition-colors ${
+            className={`font-heading text-lg md:text-xl font-semibold uppercase tracking-wider transition-colors ${
               scrolled ? "text-primary" : "text-white"
             }`}
           >

@@ -9,9 +9,16 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
           <div>
-            <h3 className="font-heading text-xl font-semibold uppercase tracking-wider mb-4">
-              {siteConfig.businessName}
-            </h3>
+            <div className="flex items-center gap-3 mb-4">
+              <img
+                src="/images/logo.png"
+                alt={siteConfig.businessName}
+                className="h-10 w-auto brightness-0 invert"
+              />
+              <h3 className="font-heading text-xl font-semibold uppercase tracking-wider">
+                {siteConfig.businessName}
+              </h3>
+            </div>
             <p className="text-gray-400 text-sm leading-relaxed mb-6">
               Your trusted partner in Santa Barbara and Montecito luxury real
               estate. Specializing in exceptional properties along the American
