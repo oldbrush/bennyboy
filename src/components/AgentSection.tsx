@@ -31,26 +31,13 @@ export default function AgentSection() {
               {siteConfig.ownerTitle}
             </p>
             <p className="text-gray-600 leading-relaxed mb-6">
-              With over 40 years of real estate experience, Ben Harris is one of
-              Santa Barbara&apos;s most trusted and accomplished real estate
-              professionals. As a top 1% Berkshire Hathaway HomeServices agent
-              worldwide, Ben brings unparalleled market knowledge, negotiation
-              expertise, and a genuine passion for helping clients achieve their
-              real estate goals.
+              Growing up in Vacaville, California, Ben Harris learned early what it means to feel rooted in a place. Nestled between the Bay Area and Sacramento, Vacaville shaped Ben&apos;s appreciation for community, open space, and the quiet pride that comes from knowing your neighbors and your town. That foundation led him south to UC Santa Barbara, where he earned his degree in Environmental Science and fell in love with California in an entirely new way. The oceanfront campus, the Gaviota Coast, the golden hills above Santa Barbara — UCSB didn&apos;t just give Ben an education. It gave him a lens through which he&apos;s seen everything since.
             </p>
             <p className="text-gray-600 leading-relaxed mb-6">
-              Growing up in the Santa Barbara area, Ben has deep-rooted
-              connections and an extensive understanding of every neighborhood
-              from Montecito to Carpinteria. His commitment to client
-              satisfaction, combined with his strategic approach to buying and
-              selling, has earned him a reputation as the go-to agent for luxury
-              properties along the American Riviera.
+              After graduation, Ben followed his connection to the land somewhere unexpected: the vineyards of Northern and Central California. Working across some of the state&apos;s most celebrated wine country — from the sun-drenched valleys of Napa and Sonoma to the foggy coastal ridgelines of Santa Cruz — he spent years immersed in the rhythms of the land and the people who tend it. It was hands-on, humbling, and deeply formative work that taught him patience, precision, and that the difference between good and exceptional almost always comes down to how much you care. But somewhere between the vineyard rows and the rolling California hills, something else was taking root. Real estate kept calling.
             </p>
             <p className="text-gray-600 leading-relaxed mb-8">
-              Whether you&apos;re searching for your dream home or looking to
-              sell your property for top dollar, Ben&apos;s decades of experience
-              and personalized approach ensure an exceptional real estate
-              experience.
+              So Ben made the move — back to Santa Barbara, where he now lives on the Mesa and proudly serves buyers and sellers throughout Santa Barbara County. Everything he gathered along the way — the analytical rigor of environmental science, the patience and care of wine country, the deep California roots that stretch from Vacaville to the South Coast — prepared him for this work in ways he couldn&apos;t have planned. For Ben, real estate isn&apos;t just about transactions. Every home has a story, every neighborhood has its own ecology, and every client deserves an agent who treats their goals like his own. When he&apos;s not working, you&apos;ll find him in the lineup at a local surf break, playing music, or doing what comes naturally — bringing people together. In Santa Barbara, this isn&apos;t just Ben&apos;s market. It&apos;s his home.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link href="/team" className="btn-primary">
