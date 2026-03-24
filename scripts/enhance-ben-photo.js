@@ -1,6 +1,4 @@
 import * as fal from "@fal-ai/serverless-client";
-import * as fs from "fs";
-import * as path from "path";
 
 // Configure fal client
 fal.config({
@@ -8,19 +6,16 @@ fal.config({
 });
 
 async function enhancePhoto() {
-  const imagePath = path.join(process.cwd(), "public/images/ben-harris.jpeg");
+  // Use the original uploaded image URL directly
+  const imageUrl = "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1759696602847-xE08Y0VQ3rwXQySxNNasLiJxHcEKmA.jpeg";
   
-  // Read the image and convert to base64
-  const imageBuffer = fs.readFileSync(imagePath);
-  const base64Image = `data:image/jpeg;base64,${imageBuffer.toString("base64")}`;
-  
-  console.log("Uploading and enhancing image with fal AI...");
+  console.log("Enhancing image with fal AI...");
   
   try {
     // Use fal's image upscaler to enhance quality
     const result = await fal.subscribe("fal-ai/creative-upscaler", {
       input: {
-        image_url: base64Image,
+        image_url: imageUrl,
         scale: 2,
         creativity: 0.2, // Low creativity to preserve original look
         detail: 1.0,
@@ -29,17 +24,8 @@ async function enhancePhoto() {
     });
     
     if (result.image?.url) {
-      // Download the enhanced image
-      const response = await fetch(result.image.url);
-      const arrayBuffer = await response.arrayBuffer();
-      const buffer = Buffer.from(arrayBuffer);
-      
-      // Save enhanced image
-      const enhancedPath = path.join(process.cwd(), "public/images/ben-harris-enhanced.jpeg");
-      fs.writeFileSync(enhancedPath, buffer);
-      
-      console.log("Enhanced image saved to:", enhancedPath);
-      console.log("Update AgentSection.tsx to use: /images/ben-harris-enhanced.jpeg");
+      console.log("Enhanced image URL:", result.image.url);
+      console.log("\nCopy this URL and use it in the AgentSection component.");
     } else {
       console.error("No image URL in result:", result);
     }
