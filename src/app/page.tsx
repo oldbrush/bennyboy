@@ -1,5 +1,4 @@
 import HeroSection from "@/components/HeroSection";
-import StatsSection from "@/components/StatsSection";
 import GallerySection from "@/components/GallerySection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import FeaturedProperties from "@/components/FeaturedProperties";
@@ -10,7 +9,6 @@ export default function HomePage() {
   return (
     <>
       <HeroSection />
-      <StatsSection />
       <GallerySection />
       <TestimonialsSection />
       <FeaturedProperties />
