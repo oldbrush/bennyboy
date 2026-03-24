@@ -4,17 +4,37 @@ import { useState } from "react";
 import Link from "next/link";
 import { siteConfig } from "@/data/siteConfig";
 
+// Video URL - Replace with your Pexels or other video source
+// You can download a video from pexels.com/search/videos/california%20coast and place it in /public/videos/
+const HERO_VIDEO_URL = "/videos/santa-barbara-coast.mp4";
+const HERO_FALLBACK_IMAGE = "https://images.unsplash.com/photo-1566438480900-0609be27a4be?w=1920&h=1080&fit=crop";
+
 export default function HeroSection() {
   const [searchQuery, setSearchQuery] = useState("");
+  const [videoError, setVideoError] = useState(false);
 
   return (
     <section className="relative h-screen min-h-[700px] flex items-center justify-center overflow-hidden">
-      {/* Background Image — Gaviota Coast, Santa Barbara County */}
-      <img
-        src="https://images.unsplash.com/photo-1566438480900-0609be27a4be?w=1920&h=1080&fit=crop"
-        alt="Gaviota Coast, Santa Barbara County coastline"
-        className="absolute inset-0 w-full h-full object-cover"
-      />
+      {/* Background Video */}
+      {!videoError ? (
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          onError={() => setVideoError(true)}
+          className="absolute inset-0 w-full h-full object-cover"
+          poster={HERO_FALLBACK_IMAGE}
+        >
+          <source src={HERO_VIDEO_URL} type="video/mp4" />
+        </video>
+      ) : (
+        <img
+          src={HERO_FALLBACK_IMAGE}
+          alt="Gaviota Coast, Santa Barbara County coastline"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+      )}
 
       {/* Warm overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-[#2c1810]/60" />
