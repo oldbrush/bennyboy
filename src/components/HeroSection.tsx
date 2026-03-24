@@ -9,10 +9,10 @@ export default function HeroSection() {
 
   return (
     <section className="relative h-screen min-h-[700px] flex items-center justify-center overflow-hidden">
-      {/* Background Image — rolling hills and oak trees at golden hour */}
+      {/* Background Image — Gaviota Coast, Santa Barbara County */}
       <img
-        src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1920&h=1080&fit=crop"
-        alt="Golden rolling hills"
+        src="https://images.unsplash.com/photo-1566438480900-0609be27a4be?w=1920&h=1080&fit=crop"
+        alt="Gaviota Coast, Santa Barbara County coastline"
         className="absolute inset-0 w-full h-full object-cover"
       />
 
