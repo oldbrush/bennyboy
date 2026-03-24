@@ -12,7 +12,7 @@ export default function AgentSection() {
               <img
                 src="/images/ben-harris.jpeg"
                 alt={siteConfig.ownerName}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover object-top"
               />
             </div>
             {/* Decorative element */}
