@@ -10,7 +10,7 @@ export default function AgentSection() {
           <div className="relative">
             <div className="relative h-[500px] md:h-[600px] overflow-hidden">
               <img
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=1000&fit=crop"
+                src="/images/ben-harris.jpeg"
                 alt={siteConfig.ownerName}
                 className="w-full h-full object-cover"
               />
